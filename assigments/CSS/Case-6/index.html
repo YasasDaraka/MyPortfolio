@@ -12,49 +12,50 @@
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="normalize.css">
     <style>
-        section{
-            position: relative;
-            width: 99.7vw;
-            height: 99.3vh;
-            font-size: 0;
-            padding-left: 2px;
-            padding-top: 2px;
-        }
-        section>section:first-child {
-            position: relative;
-            width: 74.35vw;
-            height: 99.3vh;
-            font-size: 0;
-            display: inline-block;
-        }
-        section>section:last-child{
+        body > section {
+            width: 100vw;
+            height: 100vh;
             position: absolute;
-            width: 26.40%;
-            height: 97.5%;
-            display: inline-block;
-            border: 2px solid black;
-            font-size: 0;
-            top :4px;
+            top: 0;
+            bottom: 0;
+            left: 0;
             right: 0;
-            background-image: url("images/hzr.png");
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+        }
+
+        body > section > div:first-child {
+            background: url("images/hzr.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
+            grid-row: 1/2;
+            grid-column: 1/3;
         }
-        .first{
-            position: relative;
-            display: inline-block;
-            width: 48.28vw;
-            height: 32vh;
-            border: 2px solid black;
+
+        body > section > div:nth-child(3) {
+            background: url("images/hzr.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            grid-row: 1/4;
+            grid-column: 4/5;
         }
-        div{
-            position: relative;
-            display: inline-block;
-            width: 24vw;
-            height: 32vh;
-            border: 2px solid black;
-            background-image: url("images/hzr.png");
+
+        body > section > div:nth-child(8) {
+            background: url("images/hzr.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            grid-row: 3/4;
+            grid-column: 2/4;
+        }
+
+        body > section > div {
+            background: url("images/hzr.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -63,16 +64,16 @@
 </head>
 <body>
 <section>
-    <section>
-        <div class="first"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="first"></div>
-    </section>
-    <section></section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
 </body>
 </html>
