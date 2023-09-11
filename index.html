@@ -202,7 +202,37 @@
             bottom: 200px;
             left: -25px;
         }
-
+        .th-flex-item{
+            flex: 1;
+            max-width: calc(100%/4);
+        }
+        .th-flex-item>menu>li{
+            list-style: none;
+            vertical-align: middle;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .skill-item{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .skill-item-img{
+            width: 65px;
+            height: 65px;
+            border-radius: 30%;
+            margin-right: 2rem;
+        }
+        .skill-item-tw{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
 </head>
@@ -323,62 +353,65 @@
 
     <section3 dfn id="section3">
         <h1 class="headlines">My <span style="color: darkgoldenrod">Skills</span> & <span style="color: darkgoldenrod">Tools</span></h1>
-        <section>
-            <menu>
-                <h1><span style="color: darkgoldenrod">Designs</span></h1>
-                <li>Photoshop</li>
-                <li>UI/UX Design</li>
-                <li>VFX Design</li>
-                <li>Video Design</li>
-            </menu>
+        <section class="second-flex-container">
+            <section class="th-flex-item">
+                <menu>
+                    <h1><span style="color: darkgoldenrod; font-size: 2rem; ">Designs</span></h1>
+                    <li>Photoshop</li>
+                    <li>UI/UX Design</li>
+                    <li>VFX Design</li>
+                    <li>Video Design</li>
+                </menu>
+            </section>
+            <section class="th-flex-item">
+                <menu>
+                    <h1><span style="color: darkgoldenrod; font-size: 2rem;">Web</span></h1>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Responsive Design</li>
+                    <li>Debug</li>
+                </menu>
+            </section>
+            <section class="th-flex-item">
+                <menu>
+                    <h1><span style="color: darkgoldenrod; font-size: 2rem;">Software</span></h1>
+                    <li>Data Handling</li>
+                    <li>Back end Design</li>
+                    <li>Software Design</li>
+                    <li>Standalone Software</li>
+                </menu>
+            </section>
+            <section class="th-flex-item">
+                <menu>
+                    <h1><span style="color: darkgoldenrod; font-size: 2rem;">Network</span></h1>
+                    <li>Server Manage</li>
+                    <li>Firewall Checking</li>
+                    <li>Setup Networks</li>
+                    <li>Fix Connections</li>
+                </menu>
+            </section>
         </section>
         <section>
-            <menu>
-                <h1><span style="color: darkgoldenrod">Web</span></h1>
-                <li>Web Design</li>
-                <li>Web Development</li>
-                <li>Responsive Design</li>
-                <li>Debug</li>
-            </menu>
-        </section>
-        <section>
-            <menu>
-                <h1><span style="color: darkgoldenrod">Software</span></h1>
-                <li>Data Handling</li>
-                <li>Back end Design</li>
-                <li>Software Design</li>
-                <li>Standalone Software</li>
-            </menu>
-        </section>
-        <section>
-            <menu>
-                <h1><span style="color: darkgoldenrod">Network</span></h1>
-                <li>Server Manage</li>
-                <li>Firewall Checking</li>
-                <li>Setup Networks</li>
-                <li>Fix Connections</li>
-            </menu>
-        </section>
-        <section>
-            <div>
-                <img usemap="#facebookMap" width="25px" src="assets/icons/anguler.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/css.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/ffigma.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/firebase.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/flutter.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/html.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/intelij.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/java.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/javafx.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/js.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/node.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/postman.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/vscode.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/scence.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/ntbeans.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/reacttt.png" alt="This is image" >
-                <img usemap="#facebookMap" width="25px" src="assets/icons/xd.png" alt="This is image" >
-
+            <div class="skill-item">
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/anguler.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/css.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/ffigma.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/firebase.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/flutter.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/html.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/intelij.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/java.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/javafx.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/js.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/node.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/postman.png" alt="This is image" >
+            </div>
+            <div class="skill-item-tw">
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/vscode.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/scence.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/ntbeans.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/reacttt.png" alt="This is image" >
+                <img class="skill-item-img" usemap="#facebookMap" width="25px" src="assets/icons/xd.png" alt="This is image" >
             </div>
 
         </section>
