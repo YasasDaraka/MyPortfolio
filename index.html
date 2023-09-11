@@ -160,6 +160,35 @@
             display: inline-block;
             vertical-align: middle;
         }
+        .second-flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            padding-left: 3rem;
+        }
+        .sec-flex-item{
+            margin: 7rem 3rem;
+            padding-left: 1rem;
+            padding-right: 7rem;
+            max-width: calc(100%/3);
+            border-left: 0.2rem solid #fff;
+            position: relative;
+            border-style: dashed;
+        }
+        .sec-flex-item>h4{
+            white-space: pre-wrap;
+            text-align: center;
+            position: absolute;
+            bottom: 150px;
+            margin-bottom: 30px;
+        }
+        .sec-flex-item li{
+            list-style: none;
+            vertical-align: middle;
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
@@ -256,20 +285,22 @@
 
     <section2 dfn id="section2">
         <h1 class="headlines">Educa<span style="color: darkgoldenrod">tion</span></h1>
-        <section>
-            <h4>Studied at</h4>
-            <li>2010 - 2018</li>
-            <li><span style="color: darkgoldenrod">Devapathiraja<br>Collage<br></span>Galle</li>
-        </section>
-        <section>
-            <h4>Studied at</h4>
-            <li>2020 - 2021</li>
-            <li><span style="color: darkgoldenrod">Technical Collage </span>Galle</li>
-        </section>
-        <section>
-            <h4>Higher Education</h4>
-            <li>2022 - 2024</li>
-            <li><abbr title="Institute of Software Engineering"><span style="color: darkgoldenrod">IJSE </span></abbr>Galle</li>
+        <section class="second-flex-container">
+            <section class="sec-flex-item">
+                <h4>Studied at</h4>
+                <li>2010 - 2018</li>
+                <li><span style="color: darkgoldenrod">Devapathiraja Collage<br></span>Galle</li>
+            </section>
+            <section class="sec-flex-item">
+                <h4>Studied at</h4>
+                <li>2020 - 2021</li>
+                <li><span style="color: darkgoldenrod">Technical Collage<br></span>Galle</li>
+            </section>
+            <section class="sec-flex-item">
+                <h4>Higher Education</h4>
+                <li>2022 - 2024</li>
+                <li><abbr title="Institute of Software Engineering"><span style="color: darkgoldenrod">IJSE<br></span></abbr>Galle</li>
+            </section>
         </section>
     </section2>
 
