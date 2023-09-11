@@ -54,7 +54,7 @@
             position: relative;
             padding-left: 330px;
         }
-        a,h1,h3,h4,pre,li{
+        a,h1,h2,h3,h4,pre,li{
             color: aliceblue;
             text-decoration: none;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -122,6 +122,42 @@
             border: 2px solid #E9C54A;
             transition: .2s ease-out;
         }
+        .flex-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .flex-item {
+            flex: 1;
+            max-width: calc(100%/3);
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .flex-item pre,.flex-item h2 {
+            white-space: pre-wrap;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .flex-item div{
+            padding-top: 25px;
+        }
+        .flex-item li {
+            list-style: none;
+            padding-left: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .flex-item div>div{
+            width: 45px;
+            height: 22px;
+            border-radius: 100%;
+            background-color: #E9C54A;
+            display: inline-block;
+            vertical-align: middle;
+        }
     </style>
 
 </head>
@@ -166,43 +202,53 @@
 
     <section1 dfn id="section1">
         <h1 class="headlines">About<span style="color: darkgoldenrod">Me</span></h1>
-        <section>
-            <h3><span style="color: darkgoldenrod">Who</span> I am</h3>
-            <article>
-                <pre>        I am flexible, reliable and possess excellent time keeping skills.<br> I am an enthusiastic, self motivated, reliable, responsible and hardworking person. <br>        I am a mature team worker and adaptable to all challenging situations.<br> I am able to work well both in a team environment as well as using own initiative.</pre>
-            </article>
-        </section>
+        <section class="flex-container">
+            <section class="flex-item">
+                <h2><span style="color: darkgoldenrod">Who</span> I am</h2>
+                <article>
+                    <pre>I am flexible, reliable and possess excellent time keeping skills.<br> I am an enthusiastic, self motivated, reliable, responsible and hardworking person.<br>I am a mature team worker and adaptable to all challenging situations.<br>I am able to work well both in a team environment as well as using own initiative.</pre>
+                </article>
+            </section>
 
-        <section>
-            <h3>Personal <span style="color: darkgoldenrod">Info</span> </h3>
-            <div>
-                <li><time datetime="1999-10-14">1999-10-14</time></li>
-            </div>
-            <div>
-                <li><a href="mailto:darakayasas@gmail.com">darakayasas@gmail.com</a></li>
-            </div>
-            <div>
-                <li><a href="tel:+94768008972">+94768008972</a></li>
-            </div>
-            <div>
-                <li><a href="https://www.google.lk/maps" target="_blank">Check Me</a></li>
-            </div>
-        </section>
+            <section class="flex-item">
+                <h2>Personal <span style="color: darkgoldenrod">Info</span> </h2>
+                <div>
+                    <div></div>
+                    <li><time datetime="1999-10-14">1999-10-14</time></li>
+                </div>
+                <div>
+                    <div></div>
+                    <li><a href="mailto:darakayasas@gmail.com">darakayasas@gmail.com</a></li>
+                </div>
+                <div>
+                    <div></div>
+                    <li><a href="tel:+94768008972">+94 76 800 8972</a></li>
+                </div>
+                <div>
+                    <div></div>
+                    <li><a href="https://www.google.lk/maps" target="_blank">Check Me</a></li>
+                </div>
+            </section>
 
-        <section>
-            <h3>My <span style="color: darkgoldenrod">Expertise</span> </h3>
-            <div>
-                <li>Networking</li>
-            </div>
-            <div>
-                <li>Software Develop</li>
-            </div>
-            <div>
-                <li>Videography</li>
-            </div>
-            <div>
-                <li>Music Producing</li>
-            </div>
+            <section class="flex-item">
+                <h2>My <span style="color: darkgoldenrod">Expertise</span> </h2>
+                <div>
+                    <div></div>
+                    <li>Networking</li>
+                </div>
+                <div>
+                    <div></div>
+                    <li>Software Develop</li>
+                </div>
+                <div>
+                    <div></div>
+                    <li>Videography</li>
+                </div>
+                <div>
+                    <div></div>
+                    <li>Music Producing</li>
+                </div>
+            </section>
         </section>
     </section1>
 
