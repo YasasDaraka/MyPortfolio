@@ -56,7 +56,7 @@
             position: relative;
             padding-left: 330px;
         }
-        a,h1,h2,h3,h4,pre,li{
+        a,h1,h2,h3,h4,pre,li,abbr{
             color: aliceblue;
             text-decoration: none;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -173,22 +173,36 @@
             padding-left: 1rem;
             padding-right: 7rem;
             max-width: calc(100%/3);
+            border: 0.2rem transparent;
             border-left: 0.2rem solid #fff;
             position: relative;
             border-style: dashed;
+
         }
         .sec-flex-item>h4{
             white-space: pre-wrap;
             text-align: center;
             position: absolute;
-            bottom: 150px;
+            bottom: 180px;
             margin-bottom: 30px;
+            margin-left: 30px;
         }
         .sec-flex-item li{
             list-style: none;
             vertical-align: middle;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
+        .sec-flex-item>div{
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-color: #E9C54A;
+            display: inline-block;
+            position: absolute;
+            bottom: 200px;
+            left: -25px;
+        }
+
     </style>
 
 </head>
@@ -287,16 +301,19 @@
         <h1 class="headlines">Educa<span style="color: darkgoldenrod">tion</span></h1>
         <section class="second-flex-container">
             <section class="sec-flex-item">
+                <div></div>
                 <h4>Studied at</h4>
                 <li>2010 - 2018</li>
                 <li><span style="color: darkgoldenrod">Devapathiraja Collage<br></span>Galle</li>
             </section>
             <section class="sec-flex-item">
+                <div></div>
                 <h4>Studied at</h4>
                 <li>2020 - 2021</li>
                 <li><span style="color: darkgoldenrod">Technical Collage<br></span>Galle</li>
             </section>
             <section class="sec-flex-item">
+                <div></div>
                 <h4>Higher Education</h4>
                 <li>2022 - 2024</li>
                 <li><abbr title="Institute of Software Engineering"><span style="color: darkgoldenrod">IJSE<br></span></abbr>Galle</li>
