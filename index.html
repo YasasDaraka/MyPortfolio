@@ -14,52 +14,163 @@
     <meta name="theme-color" content="red">
     <meta name="robots" content="index,follow">
 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            height: 100vh;
+            background-image: url("assets/footerback.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all 0.5s;
+            position: relative;
+            overflow-x: hidden;
+        }
+        section {
+            height: auto;
+            padding: 1rem;
+        }
+        .headlines {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 40px;
+            transition: all 2s;
+        }
+        header>section>h1{
+            display: inline-block;
+            position: relative;
+            top: 0;
+        }
+        header>section>nav{
+            display: inline-block;
+            position: relative;
+            padding-left: 330px;
+        }
+        a,h1,h3,h4,pre,li{
+            color: aliceblue;
+            text-decoration: none;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        }
+        li, h4 {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        hgroup>h1{
+            font-size: 40px;
+        }
+        .nav-link:hover,main>section>section>a:hover {
+            color: #FCC419;
+        }
+        menu>a{
+            font-size: 16px;
+            padding-left: 15px;
+        }
+        .homeBacground{
+            width: 1196px;
+            height: 680px;
+            position: absolute;
+            top: 0;
+            left: 30%;
+            z-index: -1;
+        }
+        .profilePic{
+            width: 263px;
+            height: 290px;
+            position: absolute;
+            right: 210px;
+            top: 165px;
+            border-radius: 48px;
+        }
+        main>section:first-child::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: -1;
+        }
+        main>section:first-child {
+            height: 650px;
+            overflow: hidden;
+        }
+        main>section>section{
+            position: absolute;
+            top: 250px;
+            left: 85px;
+        }
+        main>section>section>hgroup{
+            padding-bottom: 20px;
+        }
+        main>section>section>a{
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            margin: 25px 0;
+            border-radius: 10px;
+            border: 2px solid #E9C54A;
+            transition: .2s ease-out;
+        }
+    </style>
+
 </head>
 <body>
 
 <header>
     <section>
         <h1>My Port<span style="color: darkgoldenrod">folio</span></h1>
-    </section>
-    <nav>
-        <menu>
+        <nav>
+            <menu>
                 <a>Home</a>
-                <a href="#section1">About Me</a>
-                <a href="#section2">Education</a>
-                <a href="#section3">Skills & Tools</a>
-                <a href="#section4">Projects</a>
-                <a href="#section5">Assigments</a>
-                <a href="#section6">Activities</a>
-                <a href="#section7">Services</a>
-                <a href="#section8">Gallery</a>
-                <a href="#section9">Contact</a>
+                <a class="nav-link" href="#section1">About Me</a>
+                <a class="nav-link" href="#section2">Education</a>
+                <a class="nav-link" href="#section3">Skills & Tools</a>
+                <a class="nav-link" href="#section4">Projects</a>
+                <a class="nav-link" href="#section5">Assigments</a>
+                <a class="nav-link" href="#section6">Activities</a>
+                <a class="nav-link" href="#section7">Services</a>
+                <a class="nav-link" href="#section8">Gallery</a>
+                <a class="nav-link" href="#section9">Contact</a>
 
-        </menu>
-    </nav>
+            </menu>
+        </nav>
+    </section>
 </header>
 
 <main>
     <section>
         <section>
             <hgroup>
-                <h1>I am Yasas <span style="color: darkgoldenrod">Daraka</span></h1>
+                <h1>I'm Yasas <span style="color: darkgoldenrod">Daraka</span></h1>
             </hgroup>
             <article>
-                <pre>Hey...I'm Fullstack Developer <br>This is my Official Portfolio Web to show all Details About My Software Development</pre>
+                <pre>Hey...I'm Fullstack Developer This is my Official Portfolio Web <br>to show all Details About My Software Development</pre>
             </article>
+            <a href="">Hire Me</a>
         </section>
-        <img width="100px" src="assets/Me.png" alt="This is my image" >
-        <img width="200px" src="assets/Background.gif" alt="This is background" >
+        <img class="profilePic" width="100px" src="assets/Me.png" alt="This is my image" >
+        <img class="homeBacground" width="200px" src="assets/Background.gif" alt="This is background" >
         <nav></nav>
     </section>
 
     <section1 dfn id="section1">
-        <h1>About<span style="color: darkgoldenrod">Me</span></h1>
+        <h1 class="headlines">About<span style="color: darkgoldenrod">Me</span></h1>
         <section>
             <h3><span style="color: darkgoldenrod">Who</span> I am</h3>
-        <article>
-            <pre>        I am flexible, reliable and possess excellent time keeping skills.<br> I am an enthusiastic, self motivated, reliable, responsible and hardworking person. <br>        I am a mature team worker and adaptable to all challenging situations.<br> I am able to work well both in a team environment as well as using own initiative.</pre>
-        </article>
+            <article>
+                <pre>        I am flexible, reliable and possess excellent time keeping skills.<br> I am an enthusiastic, self motivated, reliable, responsible and hardworking person. <br>        I am a mature team worker and adaptable to all challenging situations.<br> I am able to work well both in a team environment as well as using own initiative.</pre>
+            </article>
         </section>
 
         <section>
@@ -96,11 +207,11 @@
     </section1>
 
     <section2 dfn id="section2">
-        <h1>Educa<span style="color: darkgoldenrod">tion</span></h1>
+        <h1 class="headlines">Educa<span style="color: darkgoldenrod">tion</span></h1>
         <section>
             <h4>Studied at</h4>
             <li>2010 - 2018</li>
-            <li><span style="color: darkgoldenrod">Devapathiraja Collage </span>Galle</li>
+            <li><span style="color: darkgoldenrod">Devapathiraja<br>Collage<br></span>Galle</li>
         </section>
         <section>
             <h4>Studied at</h4>
@@ -115,7 +226,7 @@
     </section2>
 
     <section3 dfn id="section3">
-        <h1>My <span style="color: darkgoldenrod">Skills</span> & <span style="color: darkgoldenrod">Tools</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Skills</span> & <span style="color: darkgoldenrod">Tools</span></h1>
         <section>
             <menu>
                 <h1><span style="color: darkgoldenrod">Designs</span></h1>
@@ -154,23 +265,23 @@
         </section>
         <section>
             <div>
-            <img usemap="#facebookMap" width="25px" src="assets/icons/anguler.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/css.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/ffigma.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/firebase.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/flutter.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/html.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/intelij.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/java.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/javafx.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/js.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/node.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/postman.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/vscode.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/scence.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/ntbeans.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/reacttt.png" alt="This is image" >
-            <img usemap="#facebookMap" width="25px" src="assets/icons/xd.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/anguler.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/css.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/ffigma.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/firebase.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/flutter.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/html.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/intelij.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/java.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/javafx.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/js.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/node.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/postman.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/vscode.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/scence.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/ntbeans.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/reacttt.png" alt="This is image" >
+                <img usemap="#facebookMap" width="25px" src="assets/icons/xd.png" alt="This is image" >
 
             </div>
 
@@ -178,7 +289,7 @@
     </section3>
 
     <section4 dfn id="section4">
-        <h1>My <span style="color: darkgoldenrod">Projects</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Projects</span></h1>
         <section>
             <div>
                 <img width="90px" src="assigments/royal.png" alt="This is my image" >
@@ -192,7 +303,7 @@
     </section4>
 
     <section5 dfn id="section5">
-        <h1>My <span style="color: darkgoldenrod">Assigments</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Assigments</span></h1>
         <section>
             <div>
                 <img width="90px" src="assigments/royal.png" alt="This is my image" >
@@ -204,7 +315,7 @@
     </section5>
 
     <section6 dfn id="section6">
-        <h1>My <span style="color: darkgoldenrod">Activities</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Activities</span></h1>
         <section>
             <div>
                 <img width="90px" src="assigments/royal.png" alt="This is my image" >
@@ -216,7 +327,7 @@
     </section6>
 
     <section7 dfn id="section7">
-        <h1>My <span style="color: darkgoldenrod">Services</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Services</span></h1>
         <section>
             <div>
                 <img width="90px" src="assigments/royal.png" alt="This is my image" >
@@ -227,7 +338,7 @@
     </section7>
 
     <section8 dfn id="section8">
-        <h1>My <span style="color: darkgoldenrod">Gallery</span></h1>
+        <h1 class="headlines">My <span style="color: darkgoldenrod">Gallery</span></h1>
         <section>
             <div>
                 <img width="90px" src="assigments/royal.png" alt="This is my image" >
@@ -239,7 +350,7 @@
     </section8>
 
     <section9 dfn id="section9">
-        <h1><span style="color: darkgoldenrod">Contact</span> Me</h1>
+        <h1 class="headlines"><span style="color: darkgoldenrod">Contact</span> Me</h1>
         <address>
             <div>
                 <li>Yasas Daraka</li>
@@ -257,12 +368,12 @@
         <br>
         <form action="">
             <fieldset>
-            <br>
-            <input id="name" type="text" name="name" placeholder="Name" required><br><br>
-            <input id="email" type="email" name="email" placeholder="Email" required><br><br>
-            <input id="tel" type="tel" name="tel" placeholder="Phone No" required><br><br>
-            <textarea id="massage" name="massage" placeholder="Massage" required></textarea><br><br>
-            <button> Send </button>
+                <br>
+                <input id="name" type="text" name="name" placeholder="Name" required><br><br>
+                <input id="email" type="email" name="email" placeholder="Email" required><br><br>
+                <input id="tel" type="tel" name="tel" placeholder="Phone No" required><br><br>
+                <textarea id="massage" name="massage" placeholder="Massage" required></textarea><br><br>
+                <button> Send </button>
             </fieldset>
         </form>
 
