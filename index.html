@@ -49,7 +49,7 @@
             transition: .2s ease-out;
             background-color: #262323;
         }
-        .rollback>img{
+        .rollback>a>img{
             width: 20px;
             position: absolute;
             margin: auto;
@@ -58,6 +58,9 @@
             left: 0;
             right: 0;
             transform: rotate(-90deg);
+        }
+        .rollback:hover{
+            background-color: #566573;
         }
         section {
             height: auto;
@@ -434,8 +437,8 @@
     </style>
 </head>
 <body>
-<div class="rollback"><img src="assets/arrow.png" alt=""></div>
-<header>
+<div class="rollback"><a href="#header"><img src="assets/arrow.png" alt=""></a></div>
+<header dfn id="header">
     <section>
         <h2>My Port<span style="color: darkgoldenrod">folio</span></h2>
         <nav>
