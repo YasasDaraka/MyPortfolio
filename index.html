@@ -35,6 +35,30 @@
             position: relative;
             overflow-x: hidden;
         }
+        .rollback{
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            display: inline-block;
+            border-radius: 100%;
+            z-index: 5;
+            right: 40px;
+            bottom: 20px;
+            margin: 25px 0;
+            border: 2px solid #E9C54A;
+            transition: .2s ease-out;
+            background-color: #262323;
+        }
+        .rollback>img{
+            width: 20px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: rotate(-90deg);
+        }
         section {
             height: auto;
             padding: 1rem;
@@ -108,7 +132,7 @@
         }
         main>section>section{
             position: absolute;
-            top: 250px;
+            top: 210px;
             left: 85px;
         }
         main>section>section>a{
@@ -410,7 +434,7 @@
     </style>
 </head>
 <body>
-
+<div class="rollback"><img src="assets/arrow.png" alt=""></div>
 <header>
     <section>
         <h2>My Port<span style="color: darkgoldenrod">folio</span></h2>
@@ -664,7 +688,7 @@
             </div>
                 <li class="contact-details">Yasas Daraka</li>
                 <li class="contact-details"><a href="mailto:darakayasas@gmail.com">darakayasas@gmail.com</a></li>
-                <li class="contact-details"><a href="tel:+94768008972">+94768008972</a></li>
+                <li class="contact-details"><a href="tel:+94768008972">+94 76 800 8972</a></li>
                 <li class="contact-details"><a href="https://www.google.lk/maps" target="_blank">Check Me</a></li>
         </address>
             </div>
