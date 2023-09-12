@@ -69,7 +69,7 @@
         hgroup>h1{
             font-size: 40px;
         }
-        .nav-link:hover,main>section>section>a:hover,a:hover,li:hover,time:hover {
+        .nav-link:hover,main>section>section>a:hover,a:hover,li:hover,time:hover,.fealdset>button:hover{
             color: #E9C54A;
         }
         menu>a{
@@ -349,7 +349,7 @@
             border-radius: 10px;
         }
         .address{
-            margin-top: 10px;
+            margin-top: 10.5px;
         }
         .contact-details{
             list-style: none;
@@ -366,7 +366,6 @@
             top: -2px;
             left: 120px;
         }
-
         .contact-container > div {
             flex: 1;
             width: 45px;
@@ -375,6 +374,25 @@
             background-color: #E9C54A;
             margin-bottom: 22px;
             position: relative;
+        }
+        .fealdset>button{
+            display: flex; /* Use flexbox to align items in a row */
+            align-items: center; /* Center items vertically within the button */
+            padding: 0.3rem;
+            margin: 0;
+            background: #262323;
+            color: rgb(241, 235, 235);
+            width: 12%;
+            border: none;
+            border-radius: 10px;
+            justify-content: center; /* Add space between text and image */
+            text-align: center; /* Align text to the right */
+        }
+        button>img{
+            width: 20px;
+            margin-left: 5px;
+            transform: rotate(-20deg);
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -644,7 +662,7 @@
                 <input class="contact-text" id="email" type="email" name="email" placeholder="Email" required><br><br>
                 <input class="contact-text" id="tel" type="tel" name="tel" placeholder="Phone No" required><br><br>
                 <textarea class="contact-text" id="massage" name="massage" placeholder="Massage" required></textarea><br><br>
-                <button> Send </button>
+                <button> Send <img src="assets/send.png" alt=""></button>
             </fieldset>
         </form>
             </div>
