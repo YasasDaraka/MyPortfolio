@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>MY Portfolio</title>
+    <base href="">
+    <title>Document Meta Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="icon" href="user.png">
+    <meta name="keywords" content="YASAS,GDSE66">
+    <meta name="description" content="FullStack Developer">
+    <meta name="owner" content="Yasas">
+    <meta name="author" content="Yasas">
+    <meta name="theme-color" content="red">
+    <meta name="robots" content="index,follow">
+
+    <style>
+
+        body{
+            background-color: #566573;
+        }
+        section{
+            width: 98vw;
+            height: 97vh;
+            position: relative;
+        }
+        section>div{
+            height: 280px;
+            width: 280px;
+            background-image: url("images/toyota.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .div{
+            width: 100%;
+            height: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: height 0.5s;
+            background: rgba(189, 195, 199, 0.35);
+            background: linear-gradient(to bottom, rgba(44, 62, 80, 0.34), rgba(189, 195, 199, 0.31));
+        }
+        section>div:hover .div{
+            height: 100%;
+        }
+        div>img{
+            height: 20%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section>
+    <div><div class="div"><img src="images/delete.png" alt=""></div></div>
+    </section>
+
+</body>
+
+
+</html>
