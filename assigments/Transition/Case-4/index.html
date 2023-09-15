@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Case 4</title>
+    <base href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="YASAS,GDSE66">
+    <meta name="description" content="FullStack Developer">
+    <meta name="owner" content="Yasas">
+    <meta name="author" content="Yasas">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section {
+            width: 98vw;
+            height: 99vh;
+            position: relative;
+        }
+        section>div {
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            border: 10px solid grey;
+            border-top-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .div::before {
+            content: "";
+            width: 8px;
+            height: 113px;
+            background-color: red;
+            position: absolute;
+            top: 7px;
+            left: 130px;
+            transform: rotate(45deg);
+        }
+        .div::after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 16px;
+            left: 172px;
+            transform: translateX(-50%);
+        }
+        section>div:hover{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+    <div><div class="div"></div></div>
+    </section>
+
+</body>
+</html>
