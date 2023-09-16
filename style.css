@@ -389,7 +389,7 @@ main>section>section>a:hover{
     background: rgba(189, 195, 199, 0.35);
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0.34), rgba(189, 195, 199, 0.31));
 }
-.activities-item-img:hover .activities-div,.custom-cursor{
+.activities-item-img:hover .activities-div{
     height: 100%;
 }
 .activities-more-img{
@@ -418,7 +418,8 @@ main>section>section>a:hover{
     margin-bottom: 4rem;
 }
 .service-item-img:hover {
-    transform: perspective(700px) rotateX(10deg) rotateY(20deg) scale3d(1.05, 1.05, 1.05);
+    transform: perspective(700px) rotateX(20deg) rotateY(30deg) scale3d(1.05, 1.05, 1.05);
+    box-shadow: 10px 10px 10px rgba(182, 182, 182, 0.4);
 }
 /*-----------------------------------Section 9--------------------------------------*/
 .gallery-item{
