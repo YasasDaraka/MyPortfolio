@@ -1,3 +1,4 @@
+/*-----------------------------------body--------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +31,27 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+section {
+    height: auto;
+    padding: 1rem;
+}
+.headlines {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    transition: all 2s;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+a,h1,h2,h3,h4,pre,li,abbr{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.nav-link:hover,main>section>section>a:hover,a:hover,li:hover,time:hover,.fealdset>button:hover{
+    color: #E9C54A;
+}
+/*-----------------------------------Section 1--------------------------------------*/
 .rollback{
     width: 40px;
     height: 40px;
@@ -57,18 +79,6 @@ body {
 .rollback:hover{
     background-color: #566573;
 }
-section {
-    height: auto;
-    padding: 1rem;
-}
-.headlines {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 40px;
-    transition: all 2s;
-    padding-top: 90px;
-    padding-bottom: 50px;
-}
 header>section>h2{
     display: inline-block;
     position: relative;
@@ -79,20 +89,12 @@ header>section>nav{
     position: relative;
     padding-left: 330px;
 }
-a,h1,h2,h3,h4,pre,li,abbr{
-    color: aliceblue;
-    text-decoration: none;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
 li, h4 {
     font-weight: bold;
     font-size: 1.5rem;
 }
 hgroup>h1{
     font-size: 40px;
-}
-.nav-link:hover,main>section>section>a:hover,a:hover,li:hover,time:hover,.fealdset>button:hover{
-    color: #E9C54A;
 }
 menu>a{
     font-size: 16px;
@@ -149,6 +151,7 @@ main>section>section>a:hover{
     color: black;
     border: 2px solid white;
 }
+/*-----------------------------------Section 2--------------------------------------*/
 .flex-container{
     width: 100%;
     height: 100%;
@@ -185,6 +188,7 @@ main>section>section>a:hover{
     display: inline-block;
     vertical-align: middle;
 }
+/*-----------------------------------Section 3--------------------------------------*/
 .second-flex-container{
     display: flex;
     align-items: center;
@@ -226,6 +230,16 @@ main>section>section>a:hover{
     bottom: 200px;
     left: -25px;
 }
+.more-img{
+    height: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*-----------------------------------Section 3--------------------------------------*/
 .th-flex{
     display: flex;
     align-items: center;
@@ -247,6 +261,7 @@ main>section>section>a:hover{
     margin-bottom: 10px;
     font-size: 20px;
 }
+/*-----------------------------------Section 4--------------------------------------*/
 .skill-item{
     width: 100%;
     height: 100%;
@@ -267,6 +282,7 @@ main>section>section>a:hover{
     display: flex;
     justify-content: center;
 }
+/*-----------------------------------Section 5--------------------------------------*/
 .project-item{
     width: 100%;
     height: 100%;
@@ -277,11 +293,32 @@ main>section>section>a:hover{
 }
 .project-item-img{
     width: 150px;
+    height: 235px;
     border-radius: 10%;
     margin-right: 0;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
+    background-image: url("assets/royal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
 }
+.div{
+    width: 100%;
+    height: 0;
+    border-radius: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: height 0.5s;
+    background: rgba(189, 195, 199, 0.35);
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.34), rgba(189, 195, 199, 0.31));
+}
+.project-item-img:hover .div{
+    height: 100%;
+}
+/*-----------------------------------Section 6--------------------------------------*/
 .assig-item-img{
     width: 150px;
     border-radius: 10%;
@@ -289,6 +326,7 @@ main>section>section>a:hover{
     margin-top: 3rem;
     margin-bottom: 2.5rem;
 }
+/*-----------------------------------Section 7--------------------------------------*/
 .activity-item{
     width: 100%;
     height: 100%;
@@ -303,6 +341,7 @@ main>section>section>a:hover{
     margin-top: 3rem;
     margin-bottom: 2.5rem;
 }
+/*-----------------------------------Section 8--------------------------------------*/
 .service-item{
     width: 100%;
     height: 100%;
@@ -318,6 +357,7 @@ main>section>section>a:hover{
     margin-top: 3.5rem;
     margin-bottom: 4rem;
 }
+/*-----------------------------------Section 9--------------------------------------*/
 .gallery-item{
     width: 100%;
     height: 100%;
@@ -332,6 +372,7 @@ main>section>section>a:hover{
     margin-top: 3rem;
     margin-bottom: 2.5rem;
 }
+/*-----------------------------------Section 10--------------------------------------*/
 .contact-item{
     width: 100%;
     height: 100%;
@@ -429,6 +470,7 @@ button>img{
     width: 45px;
     margin-right: 10px;
 }
+/*-----------------------------------footer--------------------------------------*/
 footer>h5 {
     text-align: center;
     color: rgb(228, 222, 222);
