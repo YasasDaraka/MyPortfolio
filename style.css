@@ -416,10 +416,12 @@ main>section>section>a:hover{
     margin-right: 2rem;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
+    transition: all 0.5s;
 }
 .service-item-img:hover {
     transform: perspective(700px) rotateX(20deg) rotateY(30deg) scale3d(1.05, 1.05, 1.05);
     box-shadow: 10px 10px 10px rgba(182, 182, 182, 0.4);
+    transition: all 0.3s;
 }
 /*-----------------------------------Section 9--------------------------------------*/
 .gallery-item{
