@@ -49,8 +49,17 @@ a,h1,h2,h3,h4,pre,li,abbr{
     text-decoration: none;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+li{
+    transition: all 0.5s;
+}
 .nav-link:hover,main>section>section>a:hover,a:hover,li:hover,time:hover,.fealdset>button:hover{
     color: #E9C54A;
+}
+li:hover{
+    transform: scale(1.3);
+    transform-origin: left;
+    text-shadow: 0 2px 4px rgb(86, 101, 115);
+    transition: all 0.2s;
 }
 /*-----------------------------------Section 1--------------------------------------*/
 .rollback{
