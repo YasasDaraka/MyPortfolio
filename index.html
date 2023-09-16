@@ -15,8 +15,27 @@
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
+<!---------------------------------Custom Cursor------------------------------------>
+<div class="custom-cursor"></div>
+<div class="custom-cursor-tw"></div>
+<script>
+    const customCursor = document.querySelector(".custom-cursor");
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        customCursor.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    const customCurs = document.querySelector(".custom-cursor-tw");
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        customCurs.style.transform = `translate(${x}px, ${y}px)`;
+    });
+</script>
 <div class="rollback"><a href="#header"><img src="assets/arrow.png" alt=""></a></div>
 <header dfn id="header">
     <section>
@@ -173,25 +192,25 @@
         </section>
         <section>
             <div class="skill-item">
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/anguler.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/css.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/ffigma.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/firebase.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/flutter.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/html.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/intelij.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/java.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/javafx.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/js.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/node.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/postman.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/anguler.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/css.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/ffigma.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/firebase.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/flutter.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/html.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/intelij.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/java.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/javafx.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/js.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/node.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/postman.png" alt="This is image" >
             </div>
             <div class="skill-item-tw">
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/vscode.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/scence.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/ntbeans.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/reacttt.png" alt="This is image" >
-                <img class="skill-item-img" usemap="#facebookMap" src="assets/icons/xd.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/vscode.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/scence.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/ntbeans.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/reacttt.png" alt="This is image" >
+                <img class="skill-item-img" src="assets/icons/xd.png" alt="This is image" >
             </div>
 
         </section>
@@ -322,7 +341,5 @@
 <footer>
     <h5>Developed by Yasas Daraka&copy;</h5>
 </footer>
-
-
 </body>
 </html>
