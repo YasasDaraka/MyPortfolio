@@ -327,14 +327,17 @@ main>section>section>a:hover{
     width: 150px;
     height: 235px;
     border-radius: 10%;
-    margin-right: 0;
+    margin-right: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
-    background-image: url("assets/royal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
+}
+.pro-img{
+    width: 150px;
+    height: 235px;
+    border-radius: 10%;
+    object-fit: cover;
+    opacity: 0.9;
 }
 .div{
     width: 100%;
@@ -478,7 +481,6 @@ main>section>section>a:hover{
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     object-fit: cover;
-
 }
 /*-----------------------------------Section 10--------------------------------------*/
 .contact-item{
