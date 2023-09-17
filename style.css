@@ -242,6 +242,9 @@ main>section>section>a:hover{
     vertical-align: middle;
     margin-bottom: 40px;
 }
+.sec-flex-item li>abbr{
+    text-decoration: none;
+}
 .sec-flex-item>div{
     width: 45px;
     height: 45px;
