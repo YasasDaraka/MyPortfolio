@@ -417,12 +417,14 @@ main>section>section>a:hover{
     margin-right: 2rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
-    background-image: url("assets/royal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
-
+}
+.activ-img{
+    width: 150px;
+    height: 235px;
+    border-radius: 10%;
+    object-fit: cover;
+    opacity: 0.9;
 }
 .activities-div{
     width: 100%;
