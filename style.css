@@ -544,6 +544,16 @@ main>section>section>a:hover{
     margin-bottom: 22px;
     position: relative;
 }
+.contact-container > div>img{
+    width: 25px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 .fealdset>button{
     display: flex;
     align-items: center;
