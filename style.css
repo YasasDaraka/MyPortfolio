@@ -367,14 +367,17 @@ main>section>section>a:hover{
     width: 150px;
     height: 235px;
     border-radius: 10%;
-    margin-right: 0;
+    margin-right: 2rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
-    background-image: url("assets/royal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
+}
+.as-img{
+    width: 150px;
+    height: 235px;
+    border-radius: 10%;
+    object-fit: cover;
+    opacity: 0.9;
 }
 .assignment-div{
     width: 100%;
