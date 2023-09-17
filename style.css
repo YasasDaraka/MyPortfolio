@@ -198,6 +198,17 @@ main>section>section>a:hover{
     background-color: #E9C54A;
     display: inline-block;
     vertical-align: middle;
+    position: relative;
+}
+.flex-item div>div>img{
+    width: 25px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 /*-----------------------------------Section 3--------------------------------------*/
 .second-flex-container{
