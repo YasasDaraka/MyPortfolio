@@ -154,12 +154,13 @@ main>section>section>a{
     margin: 25px 0;
     border-radius: 10px;
     border: 2px solid #E9C54A;
-    transition: .2s ease-out;
+    background: linear-gradient(to left, black 50%, rgba(255, 255, 255, 0.9) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
 }
 main>section>section>a:hover{
-    background: linear-gradient(to left, #E9C54A 50%, #E9C54A 50%) right;
+    background-position: left;
     color: black;
-    border: 2px solid white;
 }
 /*-----------------------------------Section 2--------------------------------------*/
 .flex-container{
