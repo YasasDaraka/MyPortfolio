@@ -276,6 +276,12 @@ main>section>section>a:hover{
     height: 65px;
     border-radius: 30%;
     margin-right: 2rem;
+    transition: all 0.2s;
+}
+.skill-item-img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 2px 4px rgb(86, 101, 115);
+    transition: all 0.2s;
 }
 .skill-item-tw{
     width: 100%;
@@ -544,6 +550,11 @@ button>img{
 .social-icon-img {
     width: 45px;
     margin-right: 10px;
+    transition: all 0.3s;
+}
+.social-icon-img:hover {
+    transform: scale(1.2);
+    transition: all 0.1s;
 }
 /*-----------------------------------footer--------------------------------------*/
 footer>h5 {
