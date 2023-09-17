@@ -252,6 +252,16 @@ main>section>section>a:hover{
     bottom: 200px;
     left: -25px;
 }
+.sec-flex-item>div>img{
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 /*-----------------------------------Section 3--------------------------------------*/
 .th-flex{
     display: flex;
