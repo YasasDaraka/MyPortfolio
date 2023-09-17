@@ -477,6 +477,8 @@ main>section>section>a:hover{
     margin-right: 2rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
+    object-fit: cover;
+
 }
 /*-----------------------------------Section 10--------------------------------------*/
 .contact-item{
