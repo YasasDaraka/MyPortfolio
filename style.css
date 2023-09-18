@@ -437,8 +437,24 @@ main>section>section>a:hover{
     background: rgba(189, 195, 199, 0.35);
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0.34), rgba(189, 195, 199, 0.31));
 }
+.activities-div>h3{
+    position: absolute;
+    top: 65%;
+    bottom: 45%;
+    left: 36%;
+    right: 64%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
+    font-size: 0px;
+}
 .activities-item-img:hover .activities-div{
     height: 100%;
+}
+.activities-item-img:hover .activities-div>h3{
+    font-size: 19px;
+    transition: all 0.5s;
 }
 .activities-more-img{
     height: 20%;
