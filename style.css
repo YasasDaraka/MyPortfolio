@@ -41,8 +41,8 @@ section {
     text-align: center;
     font-size: 40px;
     transition: all 2s;
-    padding-top: 90px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 0;
 }
 a,h1,h2,h3,h4,pre,li,abbr{
     color: aliceblue;
@@ -112,7 +112,7 @@ menu>a{
 }
 .homeBacground{
     width: 1196px;
-    height: 680px;
+    height: 103%;
     position: absolute;
     top: 0;
     left: 30%;
