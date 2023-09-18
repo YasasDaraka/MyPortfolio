@@ -466,9 +466,31 @@ main>section>section>a:hover{
     margin-bottom: 4rem;
     transition: all 0.5s;
 }
-.service-item-img:hover {
+.service-item>div:hover .service-item-img {
     transform: perspective(700px) rotateX(20deg) rotateY(30deg) scale3d(1.05, 1.05, 1.05);
     box-shadow: 10px 10px 10px rgba(182, 182, 182, 0.4);
+    transition: all 0.3s;
+}
+.service-item>div>div>h3{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 2px 4px rgb(122, 178, 241);
+}
+.service-item>div{
+    position: relative;
+    overflow: hidden;
+}
+.move-div{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    top: 15%;
+    right: -60%;
+    transition: all 0.5s;
+}
+.service-item>div:hover .move-div {
+    right: 10%;
     transition: all 0.3s;
 }
 /*-----------------------------------Section 9--------------------------------------*/
