@@ -39,9 +39,9 @@ section {
 .headlines {
     color: whitesmoke;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.965vw;
     transition: all 2s;
-    padding-top: 100px;
+    padding-top: 7vw;
     padding-bottom: 0;
 }
 a,h1,h2,h3,h4,pre,li,abbr{
@@ -93,43 +93,47 @@ header>section>h2{
     display: inline-block;
     position: relative;
     top: 0;
+    font-size: 1.779vw;
+}
+header>section{
+    height: 6vw;
 }
 header>section>nav{
     display: inline-block;
     position: relative;
-    padding-left: 330px;
+    left: 24.463vw;
 }
 li, h4 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.779vw;
 }
 hgroup>h1{
     font-size: 40px;
 }
 menu>a{
-    font-size: 16px;
-    padding-left: 15px;
+    font-size: 1.186vw;
+    padding-left: 1.112vw;
 }
-.homeBacground{
-    width: 1196px;
-    height: 103%;
+.homeBacground {
+    width: 88.658vw;
+    height: 50.912vw;
     position: absolute;
     top: 0;
     left: 30%;
     z-index: -1;
 }
-.profilePic{
-    width: 263px;
-    height: 290px;
+.profilePic {
+    width: 19.496vw;
+    height: 21.497vw;
     position: absolute;
-    right: 210px;
-    top: 165px;
+    right: 15.7vw;
+    top: 12.231vw;
     border-radius: 48px;
 }
 main>section:first-child::before {
     content: "";
     width: 100%;
-    height: 103%;
+    height: 50.912vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -137,26 +141,33 @@ main>section:first-child::before {
     z-index: -1;
 }
 main>section:first-child {
-    height: 680px;
+    height: 35vw;
     overflow: hidden;
 }
-main>section>section{
+main>section>section {
     position: absolute;
-    top: 210px;
-    left: 85px;
+    top: 15.567vw;
+    left: 6.301vw;
+}
+section>section>hgroup>h1{
+    font-size: 2.372vw;
+}
+section>section>article>pre{
+    font-size: 1.186vw;
 }
 main>section>section>a{
-    padding: 8px 15px;
+    padding: 0.593vw 1.112vw;
     text-decoration: none;
     font-weight: bold;
     color: white;
     display: inline-block;
-    margin: 25px 0;
-    border-radius: 10px;
-    border: 2px solid #E9C54A;
+    margin: 1.853vw 0;
+    border-radius: 0.741vw;
+    border: 0.148vw solid #E9C54A;
     background: linear-gradient(to left, black 50%, rgba(255, 255, 255, 0.9) 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
+    font-size: 1.186vw;
 }
 main>section>section>a:hover{
     background-position: left;
@@ -173,8 +184,8 @@ main>section>section>a:hover{
 .flex-item {
     flex: 1;
     max-width: calc(100%/3);
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.483vw;
+    margin-left: 1.483vw;
 }
 .flex-item pre,.flex-item h2 {
     white-space: pre-wrap;
@@ -182,18 +193,18 @@ main>section>section>a:hover{
     padding-top: 25px;
 }
 .flex-item div{
-    padding-top: 25px;
+    padding-top: 1.853vw
 }
 .flex-item li {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 1.483vw;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 0.741vw;
     vertical-align: middle;
 }
 .flex-item div>div{
-    width: 45px;
-    height: 22px;
+    width: 3.336vw;
+    height: 1.631vw;
     border-radius: 100%;
     background-color: #E9C54A;
     display: inline-block;
@@ -201,7 +212,7 @@ main>section>section>a:hover{
     position: relative;
 }
 .flex-item div>div>img{
-    width: 25px;
+    width: 1.853vw;
     display: inline-block;
     position: absolute;
     left: 0;
@@ -209,6 +220,10 @@ main>section>section>a:hover{
     top: 0;
     bottom: 0;
     margin: auto;
+}
+.mail{
+    font-size: 1.75vw;
+    transition: all 0.5s;
 }
 /*-----------------------------------Education--------------------------------------*/
 .second-flex-container{
@@ -273,7 +288,7 @@ main>section>section>a:hover{
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 6rem;
+    padding-left: 7rem;
 
 }
 .th-flex-item{
@@ -300,7 +315,8 @@ main>section>section>a:hover{
     width: 65px;
     height: 65px;
     border-radius: 30%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     transition: all 0.2s;
 }
 .skill-item-img:hover{
@@ -383,7 +399,8 @@ main>section>section>a:hover{
     width: 150px;
     height: 235px;
     border-radius: 10%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     position: relative;
@@ -446,7 +463,8 @@ main>section>section>a:hover{
     width: 150px;
     height: 235px;
     border-radius: 10%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     position: relative;
@@ -504,12 +522,15 @@ main>section>section>a:hover{
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+    padding-bottom: 3vw;
+    padding-top: 2vw;
 }
 .service-item-img{
     width: 285px;
     height: 150px;
     border-radius: 10%;
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
     transition: all 0.5s;
@@ -552,10 +573,11 @@ main>section>section>a:hover{
 .gallery-item-img{
     width: 150px;
     border-radius: 10%;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
     object-fit: cover;
+    margin-left: 1rem;
 }
 /*-----------------------------------Contact--------------------------------------*/
 .contact-item{
@@ -564,7 +586,7 @@ main>section>section>a:hover{
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    padding-top: 0;
+    padding-top: 3.558vw;
     position: relative;
 }
 .contact-item-set{
@@ -611,7 +633,7 @@ main>section>section>a:hover{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: -2px;
+    top: 45px;
     left: 120px;
 }
 .contact-container > div {
