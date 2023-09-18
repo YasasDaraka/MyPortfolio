@@ -362,6 +362,22 @@ main>section>section>a:hover{
     right: 0;
     margin: auto;
 }
+.div>h3{
+    position: absolute;
+    top: 65%;
+    bottom: 45%;
+    left: 36%;
+    right: 64%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 5px 10px rgb(0, 0, 0);
+    font-size: 0px;
+}
+.project-item-img:hover .div>h3{
+    font-size: 19px;
+    transition: all 0.5s;
+}
 /*-----------------------------------Section 6--------------------------------------*/
 .assignment-item-img{
     width: 150px;
@@ -401,7 +417,8 @@ main>section>section>a:hover{
     left: 0;
     right: 0;
     margin: auto;
-}.assignment-div>h3{
+}
+.assignment-div>h3{
      position: absolute;
      top: 65%;
      bottom: 45%;
@@ -412,7 +429,7 @@ main>section>section>a:hover{
      font-weight: bold;
      text-shadow: 0 5px 10px rgb(0, 0, 0);
      font-size: 0px;
- }
+}
 .assignment-item-img:hover .assignment-div>h3{
     font-size: 19px;
     transition: all 0.5s;
