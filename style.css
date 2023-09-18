@@ -61,7 +61,7 @@ li:hover{
     text-shadow: 0 2px 4px rgb(86, 101, 115);
     transition: all 0.2s;
 }
-/*-----------------------------------Section 1--------------------------------------*/
+/*-----------------------------------Home--------------------------------------*/
 .rollback{
     width: 40px;
     height: 40px;
@@ -162,7 +162,7 @@ main>section>section>a:hover{
     background-position: left;
     color: black;
 }
-/*-----------------------------------Section 2--------------------------------------*/
+/*-----------------------------------About--------------------------------------*/
 .flex-container{
     width: 100%;
     height: 100%;
@@ -210,7 +210,7 @@ main>section>section>a:hover{
     bottom: 0;
     margin: auto;
 }
-/*-----------------------------------Section 3--------------------------------------*/
+/*-----------------------------------Education--------------------------------------*/
 .second-flex-container{
     display: flex;
     align-items: center;
@@ -265,7 +265,7 @@ main>section>section>a:hover{
     bottom: 0;
     margin: auto;
 }
-/*-----------------------------------Section 3--------------------------------------*/
+/*-----------------------------------Skill--------------------------------------*/
 .th-flex{
     display: flex;
     align-items: center;
@@ -287,7 +287,7 @@ main>section>section>a:hover{
     margin-bottom: 10px;
     font-size: 20px;
 }
-/*-----------------------------------Section 4--------------------------------------*/
+/*-----------------------------------Tools--------------------------------------*/
 .skill-item{
     width: 100%;
     height: 100%;
@@ -314,7 +314,7 @@ main>section>section>a:hover{
     display: flex;
     justify-content: center;
 }
-/*-----------------------------------Section 5--------------------------------------*/
+/*-----------------------------------Project--------------------------------------*/
 .project-item{
     width: 100%;
     height: 100%;
@@ -378,7 +378,7 @@ main>section>section>a:hover{
     font-size: 19px;
     transition: all 0.5s;
 }
-/*-----------------------------------Section 6--------------------------------------*/
+/*-----------------------------------Assignment--------------------------------------*/
 .assignment-item-img{
     width: 150px;
     height: 235px;
@@ -434,7 +434,7 @@ main>section>section>a:hover{
     font-size: 19px;
     transition: all 0.5s;
 }
-/*-----------------------------------Section 7--------------------------------------*/
+/*-----------------------------------Activity--------------------------------------*/
 .activity-item{
     width: 100%;
     height: 100%;
@@ -497,7 +497,7 @@ main>section>section>a:hover{
     right: 0;
     margin: auto;
 }
-/*-----------------------------------Section 8--------------------------------------*/
+/*-----------------------------------Service--------------------------------------*/
 .service-item{
     width: 100%;
     height: 100%;
@@ -541,7 +541,7 @@ main>section>section>a:hover{
     right: 10%;
     transition: all 0.3s;
 }
-/*-----------------------------------Section 9--------------------------------------*/
+/*-----------------------------------Gallery--------------------------------------*/
 .gallery-item{
     width: 100%;
     height: 100%;
@@ -557,7 +557,7 @@ main>section>section>a:hover{
     margin-bottom: 2.5rem;
     object-fit: cover;
 }
-/*-----------------------------------Section 10--------------------------------------*/
+/*-----------------------------------Contact--------------------------------------*/
 .contact-item{
     width: 100%;
     height: 100%;
