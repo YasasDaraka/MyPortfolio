@@ -645,6 +645,9 @@ main>section>section>a:hover{
     justify-content: center;
     text-align: center;
     border: 1px solid #E9C54A ;
+    background: linear-gradient(to left, black 50%, rgba(255, 255, 255, 0.9) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
 }
 button>img{
     width: 20px;
@@ -652,6 +655,11 @@ button>img{
     transform: rotate(-20deg);
     margin-bottom: 5px;
 }
+.fealdset>button:hover{
+    background-position: left;
+    color: black;
+}
+
 .social-icon {
     width: 25px;
     display: flex;
