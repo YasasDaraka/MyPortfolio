@@ -1,4 +1,4 @@
-@media all and (min-width:0px) and (max-width: 768px){
+@media all and (min-width:425px) and (max-width: 768px) {
 
     /*-----------------------------------Home--------------------------------------*/
 
@@ -256,5 +256,9 @@ button>img{
 }
 .social-icon-img {
     width: 4.336vw;
+}
+/*-----------------------------------footer--------------------------------------*/
+footer>h5 {
+    font-size: 2.334vw;
 }
 }
