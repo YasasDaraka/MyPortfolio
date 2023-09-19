@@ -4,16 +4,15 @@
 
 header>section>h2{
     position: absolute;
-    top: 5.5vw;
-    left: 41.8vw;
-    font-size: 2.779vw;
+    top: 4.5vw;
+    left: 35.1vw;
+    font-size: 5.779vw;
 }
 header>section{
 
 }
 header>section>nav{
-    left: 7.462vw;
-    top: -0.741vw;
+    display: none;
 }
 li, h4 {
 
@@ -26,54 +25,56 @@ menu>a{
     padding-left: 1.112vw;
 }
 .homeBacground {
-    width: 112.65vw;
-    height: 60vw;
-    left: -6%;
+    width: 150.65vw;
+    height: 90vw;
+    left: -25%;
 }
 .profilePic {
-    width: 22.5vw;
-    height: 25.5vw;
-    right: 36.7vw;
-    top: 15.2vw;
+    width: 31.5vw;
+    height: 34.5vw;
+    right: 30.1vw;
+    top: 25.2vw;
 }
 main>section:first-child::before {
     height: 66.912vw;
 }
 main>section:first-child {
-    height: 48vw;
+    height: 75vw;
 }
 main>section>section {
-    top: 46.567vw;
-    left: 26.01vw;
+    top: 66.567vw;
+    left: 1.01vw;
     text-align: center;
 }
 section>section>hgroup>h1{
     margin-bottom: 0.6vw;
-    font-size: 3.5vw;
+    font-size: 6.5vw;
 }
 section>section>article>pre{
-    font-size: 1.6vw;
+    font-size: 3.1vw;
 }
 main>section>section>a{
-    font-size: 1.886vw;
+    font-size: 3.886vw;
 }
 
 /*-----------------------------------About--------------------------------------*/
 .headlines {
-    font-size: 3.965vw;
+    font-size: 5.965vw;
+}
 }
 .flex-container{
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
 .flex-item {
-    max-width: calc(120%/3);
+    max-width: calc(160%/3);
 }
 .flex-item pre{
     font-size: 2.6vw;
 }
 .flex-item h2{
-    font-size: 2.779vw;
+    font-size: 4.779vw;
 }
 .flex-item div{
     padding-top: 1.993vw;
@@ -82,44 +83,47 @@ main>section>section>a{
 
 }
 .flex-item div>div{
-    width: 5.336vw;
-    height: 3.631vw;
+    width: 6.336vw;
+    height: 5.631vw;
 }
 .flex-item div>div>img{
-    width: 2.8vw;
+    width: 4.1vw;
 }
 .mail{
-    font-size: 2.3vw;
+    font-size: 3vw;
 }
 li, h4 {
-    font-size: 2.779vw;
+    font-size: 4vw;
 }
 
 /*-----------------------------------Education--------------------------------------*/
 .second-flex-container{
     padding-left: 10.558vw;
+    flex-direction: column;
 }
 .sec-flex-item{
 
 }
 .sec-flex-item>h4{
     text-align: start;
-    font-size: 2.7vw;
+    font-size: 4.7vw;
+    bottom: 29.343vw;
+    padding-left: 4.302vw;
 }
 .sec-flex-item li{
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
 }
 .sec-flex-item li>abbr{
 
 }
 .sec-flex-item>div{
-    bottom: 15.826vw;
-    left: -2.52vw;
-    width: 4.336vw;
-    height: 4.336vw;
+    bottom: 30.743vw;
+    left: -4.3vw;
+    width: 7.336vw;
+    height: 7.336vw;
 }
 .sec-flex-item>div>img{
-    width: 3.965vw;
+    width: 5.965vw;
 }
 /*-----------------------------------Skill--------------------------------------*/
 .th-flex{
