@@ -234,15 +234,15 @@ main>section>section>a:hover{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
+    padding: 1.186vw;
+    padding-left: 3.558vw;
 }
 .sec-flex-item{
-    margin: 7rem 3rem;
-    padding-left: 1rem;
-    padding-right: 7rem;
+    margin: 8.302vw 3.558vw;
+    padding-left: 1.186vw;
+    padding-right: 8.302vw;
     max-width: calc(100%/3);
-    border: 0.2rem transparent;
+    border: 0.237vw transparent;
     border-left: 0.2rem solid #fff;
     position: relative;
     border-style: dashed;
@@ -251,30 +251,30 @@ main>section>section>a:hover{
     white-space: pre-wrap;
     text-align: center;
     position: absolute;
-    bottom: 180px;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    bottom: 13.343vw;
+    margin-bottom: 2.224vw;
+    margin-left: 2.224vw;
 }
 .sec-flex-item li{
     list-style: none;
     vertical-align: middle;
-    margin-bottom: 40px;
+    margin-bottom: 2.965vw;
 }
 .sec-flex-item li>abbr{
     text-decoration: none;
 }
 .sec-flex-item>div{
-    width: 45px;
-    height: 45px;
+    width: 3.336vw;
+    height: 3.336vw;
     border-radius: 100%;
     background-color: #E9C54A;
     display: inline-block;
     position: absolute;
-    bottom: 200px;
-    left: -25px;
+    bottom: 14.826vw;
+    left: -1.853vw;
 }
 .sec-flex-item>div>img{
-    width: 40px;
+    width: 2.965vw;
     display: inline-block;
     position: absolute;
     left: 0;
@@ -291,7 +291,7 @@ main>section>section>a:hover{
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 7rem;
+    padding-left: 8.302vw;
 
 }
 .th-flex-item{
@@ -299,27 +299,28 @@ main>section>section>a:hover{
     max-width: calc(100%/4);
 }
 .th-flex-item>menu>li{
+    font-size: 1.483vw;
     list-style: none;
     vertical-align: middle;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-top: 1.853vw;
+    margin-bottom: 0.741vw;
 }
+
 /*-----------------------------------Tools--------------------------------------*/
 .skill-item{
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.483vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .skill-item-img{
-    width: 65px;
-    height: 65px;
+    width: 4.818vw;
+    height: 4.818vw;
     border-radius: 30%;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 1.186vw;
+    margin-left: 1.186vw;
     transition: all 0.2s;
 }
 .skill-item-img:hover{
@@ -586,7 +587,7 @@ main>section>section>a:hover{
 .contact-item{
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.483vw;
     display: flex;
     justify-content: space-around;
     padding-top: 3.558vw;
@@ -595,7 +596,7 @@ main>section>section>a:hover{
 .contact-item-set{
     flex: 1;
     max-width: calc(100%/2);
-    margin-bottom: 90px;
+    margin-bottom: 6.672vw;
 }
 .contact-info{
     flex: 1;
@@ -607,49 +608,49 @@ main>section>section>a:hover{
     outline: none;
     text-decoration: none;
     border: none;
-    margin-bottom: 90px;
-    margin-left: 60px;
+    margin-bottom: 6.672vw;
+    margin-left: 4.448vw;
 }
 .contact-text{
-    padding: 0.5rem;
+    padding: 0.593vw;
     margin: 0;
     background: #262323;
     color: rgb(241, 235, 235);
     text-transform: none;
-    font-size: 1rem;
+    font-size: 1.186vw;
     width: 60%;
-    border-radius: 10px;
-    border: 1px solid #E9C54A ;
+    border-radius: 0.741vw;
+    border: 1px solid #E9C54A;
 }
 .address{
-    margin-top: 10.5px;
+    margin-top: 0.778vw;
 }
 .contact-details{
     list-style: none;
     vertical-align: middle;
-    margin-bottom: 40px;
-    margin-left: 180px;
+    margin-bottom: 2.965vw;
+    margin-left: 13.343vw;
 }
 .contact-container {
-    width: 45px;
-    height: 280px;
+    width: 3.336vw;
+    height: 20.756vw;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 45px;
-    left: 120px;
+    top: 3.336vw;
+    left: 8.895vw;
 }
 .contact-container > div {
     flex: 1;
-    width: 45px;
-    height: 45px;
+    width: 3.336vw;
+    height: 3.336vw;
     border-radius: 100%;
     background-color: #E9C54A;
-    margin-bottom: 22px;
+    margin-bottom: 1.631vw;
     position: relative;
 }
 .contact-container > div>img{
-    width: 25px;
+    width: 1.853vw;
     display: inline-block;
     position: absolute;
     left: 0;
@@ -661,23 +662,24 @@ main>section>section>a:hover{
 .fealdset>button{
     display: flex;
     align-items: center;
-    padding: 0.3rem;
+    padding: 0.356vw;
     margin: 0;
     color: rgb(241, 235, 235);
     width: 12%;
-    border-radius: 10px;
+    border-radius: 0.741vw;
     justify-content: center;
     text-align: center;
-    border: 1px solid #E9C54A ;
+    border: 1px solid #E9C54A;
     background: linear-gradient(to left, #262323 50%, rgba(255, 255, 255, 0.9) 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
+    font-size: 1.186vw;
 }
 button>img{
-    width: 20px;
-    margin-left: 5px;
+    width: 1.483vw;
+    margin-left: 0.371vw;
     transform: rotate(-20deg);
-    margin-bottom: 5px;
+    margin-bottom: 0.371vw;
 }
 .fealdset>button:hover{
     background-position: left;
@@ -685,17 +687,17 @@ button>img{
 }
 
 .social-icon {
-    width: 25px;
+    width: 1.853vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    bottom: 140px;
-    left: 118.5px;
+    bottom: 10.378vw;
+    left: 8.784vw;
 }
 .social-icon-img {
-    width: 45px;
-    margin-right: 10px;
+    width: 3.336vw;
+    margin-right: 0.741vw;
     transition: all 0.3s;
 }
 .social-icon-img:hover {
@@ -706,8 +708,8 @@ button>img{
 footer>h5 {
     text-align: center;
     color: rgb(228, 222, 222);
-    padding-bottom: 10px;
-    font-size: 18px;
+    padding-bottom: 0.741vw;
+    font-size: 1.334vw;
 }
 /*--------------------------------Custom Cursor----------------------------------*/
 .custom-cursor {
