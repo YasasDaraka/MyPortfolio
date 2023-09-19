@@ -64,7 +64,7 @@ main>section>section>a{
     align-items: center;
 }
 .flex-item {
-
+    max-width: calc(120%/3);
 }
 .flex-item pre{
     font-size: 2.6vw;
@@ -79,10 +79,11 @@ main>section>section>a{
 
 }
 .flex-item div>div{
-
+    width: 5.336vw;
+    height: 3.631vw;
 }
 .flex-item div>div>img{
-
+    width: 2.8vw;
 }
 .mail{
     font-size: 2.3vw;
@@ -108,10 +109,13 @@ main>section>section>a{
 
 }
 .sec-flex-item>div{
-
+    bottom: 15.826vw;
+    left: -2.52vw;
+    width: 4.336vw;
+    height: 4.336vw;
 }
 .sec-flex-item>div>img{
-
+    width: 3.965vw;
 }
     /*-----------------------------------Skill--------------------------------------*/
 .th-flex{
@@ -234,7 +238,7 @@ main>section>section>a{
     height: 4.336vw;
 }
 .contact-container > div>img{
-
+    width: 2.8vw;
 }
 .fealdset>button{
     background-size: 210%;
@@ -246,9 +250,11 @@ button>img{
 }
 
 .social-icon {
-
+    width: 3.853vw;
+    bottom: 18.378vw;
+    left: 8.784vw;
 }
 .social-icon-img {
-
+    width: 4.336vw;
 }
 }
