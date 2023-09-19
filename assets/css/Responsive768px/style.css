@@ -3,7 +3,10 @@
     /*-----------------------------------Home--------------------------------------*/
 
 header>section>h2{
-    display: none;
+    position: absolute;
+    top: 5.5vw;
+    left: 41.8vw;
+    font-size: 2.779vw;
 }
 header>section{
 
@@ -62,9 +65,11 @@ main>section>section>a{
 .flex-container{
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
-.flex-item {
-    max-width: calc(120%/3);
+.flex-container>section:first-child{
+    max-width: calc(60%);
+    margin-bottom: 50vw;
 }
 .flex-item pre{
     font-size: 2.6vw;
@@ -88,12 +93,22 @@ main>section>section>a{
 .mail{
     font-size: 2.3vw;
 }
-    li, h4 {
-        font-size: 2.779vw;
-    }
+li, h4 {
+    font-size: 2.779vw;
+}
+.flex-container>section:nth-child(2){
+    position: absolute;
+    top: 50vw;
+    left: 10vw;
+}
+.flex-container>section:nth-child(3){
+    position: absolute;
+    top: 50vw;
+    right: 10vw;
+}
     /*-----------------------------------Education--------------------------------------*/
 .second-flex-container{
-
+    padding-left: 10.558vw;
 }
 .sec-flex-item{
 
