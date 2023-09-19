@@ -144,13 +144,13 @@ li, h4 {
 
 }
 .th-flex-item{
-
+    max-width: calc(100%);
 }
 .th-flex-item>menu>li{
-    font-size: 2vw;
+    font-size: 4.8vw;
 }
 .th-flex-span{
-    font-size: 3.372vw;
+    font-size: 6.372vw;
 }
 .skill-item{
 
