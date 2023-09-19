@@ -1,4 +1,4 @@
-@media all and (min-width:425px) and (max-width: 768px){
+@media all and (min-width:0px) and (max-width: 768px){
 
     /*-----------------------------------Home--------------------------------------*/
 
@@ -217,7 +217,7 @@ main>section>section>a{
 
 }
 .contact-text{
-
+    font-size: 1.786vw;
 }
 .address{
 
@@ -226,19 +226,23 @@ main>section>section>a{
 
 }
 .contact-container {
-
+    width: 4.236vw;
+    height: 24.756vw;
 }
 .contact-container > div {
-
+    width: 4.336vw;
+    height: 4.336vw;
 }
 .contact-container > div>img{
 
 }
 .fealdset>button{
-
+    background-size: 210%;
+    font-size: 2.186vw;
+    width: 18%;
 }
 button>img{
-
+    width: 2.483vw;
 }
 
 .social-icon {
