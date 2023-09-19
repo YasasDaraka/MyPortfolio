@@ -54,9 +54,7 @@ section>section>article>pre{
 main>section>section>a{
     font-size: 1.886vw;
 }
-main>section>section>a:hover{
 
-}
     /*-----------------------------------About--------------------------------------*/
 .headlines {
     font-size: 3.965vw;
@@ -147,9 +145,6 @@ main>section>section>a:hover{
     width: 6vw;
     height: 6vw;
 }
-.skill-item-img:hover{
-
-}
 .skill-item-tw{
 
 }
@@ -199,6 +194,57 @@ main>section>section>a:hover{
 
 }
 .service-item>div:hover .move-div {
+
+}
+/*-----------------------------------Gallery--------------------------------------*/
+.gallery-item{
+    flex-wrap: wrap;
+}
+.gallery-item-img{
+
+}
+/*-----------------------------------Contact--------------------------------------*/
+.contact-item{
+
+}
+.contact-item-set{
+
+}
+.contact-info{
+
+}
+.fealdset{
+
+}
+.contact-text{
+
+}
+.address{
+
+}
+.contact-details{
+
+}
+.contact-container {
+
+}
+.contact-container > div {
+
+}
+.contact-container > div>img{
+
+}
+.fealdset>button{
+
+}
+button>img{
+
+}
+
+.social-icon {
+
+}
+.social-icon-img {
 
 }
 }
