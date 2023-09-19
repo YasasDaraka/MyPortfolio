@@ -61,7 +61,6 @@ main>section>section>a{
 .headlines {
     font-size: 5.965vw;
 }
-}
 .flex-container{
     flex-direction: column;
     align-items: center;
@@ -112,6 +111,7 @@ li, h4 {
 }
 .sec-flex-item li{
     margin-bottom: 2vw;
+    margin-left: 2vw;
 }
 .sec-flex-item li>abbr{
 
@@ -127,15 +127,17 @@ li, h4 {
 }
 /*-----------------------------------Skill--------------------------------------*/
 .th-flex{
-
-
+    flex-direction: column;
+    padding-left: 6.302vw;
 }
 .th-flex-item{
     padding: 0;
     margin-bottom: 0.5vw;
+    text-align: center;
 }
 .th-flex-item>menu>li {
-
+    font-size: 4.8vw;
+    margin-bottom: 3.741vw;
 }
 /*-----------------------------------Tools--------------------------------------*/
 .th-flex{
