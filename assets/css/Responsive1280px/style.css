@@ -305,7 +305,9 @@ main>section>section>a:hover{
     margin-top: 1.853vw;
     margin-bottom: 0.741vw;
 }
-
+.th-flex-span{
+    font-size: 2.372vw;
+}
 /*-----------------------------------Tools--------------------------------------*/
 .skill-item{
     width: 100%;
