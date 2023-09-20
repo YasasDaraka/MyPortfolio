@@ -264,13 +264,19 @@ li, h4 {
     text-align: center;
 }
 .service-item-img{
-
+    width: 60.42vw;
+    height: 37.119vw;
+    border-radius: 10%;
+    margin-right: 1.186vw;
+    margin-left: 1.186vw;
+    margin-top: 4.151vw;
+    margin-bottom: 4.744vw;
 }
 .service-item>div:hover .service-item-img {
 
 }
 .service-item>div>div>h3{
-
+    font-size: 6vw
 }
 .service-item>div{
 
