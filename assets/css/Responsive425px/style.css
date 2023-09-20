@@ -227,24 +227,33 @@ li, h4 {
 /*-----------------------------------Activity--------------------------------------*/
 .activity-item{
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 .activities-item-img{
-
+    width: 37.119vw;
+    height: 58.42vw;
+    border-radius: 10%;
+    margin-right: 6.186vw;
+    margin-top: 3.558vw;
+    margin-bottom: 2.965vw;
 }
 .activ-img{
-
+    width: 37.119vw;
+    height: 58.42vw;
 }
 .activities-div{
 
 }
 .activities-div>h3{
-
+    left: 34%;
+    right: 66%;
 }
 .activities-item-img:hover .activities-div{
 
 }
 .activities-item-img:hover .activities-div>h3{
-
+    font-size: 5.1vw;
 }
 .activities-more-img{
 
