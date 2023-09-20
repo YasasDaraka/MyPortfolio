@@ -336,7 +336,7 @@ li, h4 {
 }
 .contact-text{
     font-size: 3.786vw;
-    width: 100%;
+    width: 94%;
 }
 .address{
     text-align: center;
@@ -372,7 +372,7 @@ button>img{
 }
 .social-icon-img {
     width: 7.336vw;
-    margin-right: 6.641vw;
+    margin-right: 5.74vw
 }
 main>section:last-child>nav{
     display: flex;
