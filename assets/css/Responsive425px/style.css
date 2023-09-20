@@ -56,7 +56,20 @@ section>section>article>pre{
 main>section>section>a{
     font-size: 3.886vw;
 }
-
+.rollback{
+    width: 8.965vw;
+    height: 8.965vw;
+    position: fixed;
+    display: inline-block;
+    border-radius: 100%;
+    z-index: 5;
+    right: 2.965vw;
+    bottom: 1.483vw;
+    margin: 1.85325vw 0;
+}
+.rollback>img{
+    width: 5.553vw;
+}
 /*-----------------------------------About--------------------------------------*/
 .headlines {
     font-size: 5.965vw;
@@ -305,56 +318,68 @@ li, h4 {
 }
 /*-----------------------------------Contact--------------------------------------*/
 .contact-item{
-
+    flex-direction: column;
+    align-items: center;
+    width: 91%;
 }
 .contact-item-set{
-
+    flex: 1;
+    max-width: 100%;
+    margin-bottom: 6.672vw;
 }
 .contact-info{
-
+    max-width: 100%;
+    padding-right: 1vw;
 }
 .fealdset{
-
+    width: 60vw;
 }
 .contact-text{
-    font-size: 1.786vw;
+    font-size: 3.786vw;
+    width: 100%;
 }
 .address{
-
+    text-align: center;
 }
 .contact-details{
-
+    font-size: 5vw;
+    margin-left: 0;
 }
 .contact-container {
-    width: 4.236vw;
-    height: 24.756vw;
+    width: 6.236vw;
+    height: 35.756vw;
 }
 .contact-container > div {
-    width: 4.336vw;
-    height: 4.336vw;
+    width: 6.336vw;
+    height: 6.336vw;
 }
 .contact-container > div>img{
-    width: 2.8vw;
+    width: 4.8vw;
 }
 .fealdset>button{
     background-size: 210%;
-    font-size: 2.186vw;
-    width: 18%;
+    font-size: 3.9vw;
+    width: 25%;
 }
 button>img{
-    width: 2.483vw;
+    width: 4.483vw;
 }
 
 .social-icon {
     width: 3.853vw;
-    bottom: 18.378vw;
-    left: 8.784vw;
+    bottom: 9.378vw;
+    left: 19.784vw;
 }
 .social-icon-img {
-    width: 4.336vw;
+    width: 7.336vw;
+    margin-right: 6.641vw;
+}
+main>section:last-child>nav{
+    display: flex;
+    justify-items: center;
 }
 /*-----------------------------------footer--------------------------------------*/
 footer>h5 {
-    font-size: 2.334vw;
+    font-size: 3.634vw;
 }
 }
