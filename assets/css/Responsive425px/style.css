@@ -162,6 +162,68 @@ li, h4 {
 .skill-item-tw{
 
 }
+/*-----------------------------------Project--------------------------------------*/
+.project-item{
+    align-items: center;
+    flex-direction: column;
+}
+.project-item-img{
+    width: 37.119vw;
+    height: 58.42vw;
+    border-radius: 10%;
+    margin-right: 1.186vw;
+    margin-top: 3.558vw;
+    margin-bottom: 2.965vw;
+}
+.pro-img{
+    width: 37.119vw;
+    height: 58.42vw;
+}
+.div{
+
+}
+.project-item-img:hover .div{
+
+}
+.more-img{
+
+}
+.div>h3{
+    left: 34%;
+    right: 66%;
+}
+.project-item-img:hover .div>h3{
+    font-size: 5.1vw;
+}
+/*-----------------------------------Assignment--------------------------------------*/
+.assignment-item-img{
+    width: 37.119vw;
+    height: 58.42vw;
+    border-radius: 10%;
+    margin-right: 6.186vw;
+    margin-top: 3.558vw;
+    margin-bottom: 2.965vw;
+}
+.as-img{
+    width: 37.119vw;
+    height: 58.42vw;
+}
+.assignment-div{
+
+}
+.assignment-item-img:hover .assignment-div{
+
+}
+.assignment-more-img{
+
+}
+.assignment-div>h3{
+    left: 34%;
+    right: 66%;
+}
+.assignment-item-img:hover .assignment-div>h3{
+    font-size: 5.1vw;
+}
 /*-----------------------------------Activity--------------------------------------*/
 .activity-item{
     flex-wrap: wrap;
