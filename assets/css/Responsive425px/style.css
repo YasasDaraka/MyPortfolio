@@ -25,14 +25,14 @@ menu>a{
     padding-left: 1.112vw;
 }
 .homeBacground {
-    width: 150.65vw;
+    width: 147.65vw;
     height: 90vw;
     left: -25%;
 }
 .profilePic {
     width: 31.5vw;
     height: 34.5vw;
-    right: 30.1vw;
+    right: 33.1vw;
     top: 25.2vw;
 }
 main>section:first-child::before {
@@ -43,7 +43,7 @@ main>section:first-child {
 }
 main>section>section {
     top: 66.567vw;
-    left: 1.01vw;
+    left: 2.01vw;
     text-align: center;
 }
 section>section>hgroup>h1{
