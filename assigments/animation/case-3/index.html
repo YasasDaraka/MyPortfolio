@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Case 1</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+
+    section{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 600px;
+      height: 300px;
+      border: 2px solid #A93226;
+      overflow:hidden;
+    }
+    .full{
+      width: 500%;
+      height: 100%;
+      display: flex;
+      position: relative;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: d;
+      animation-direction: alternate;
+    }
+    .full>div{
+      flex: 1;
+      max-width: calc(100%/5);
+      height: 100%;
+    }
+    @keyframes d {
+      0%{
+        right: 0%;
+      }
+      25%{
+        right: 100%;
+      }
+      50%{
+        right: 200%;
+      }
+      75%{
+        right: 300%;
+      }
+      100%{
+        right: 400%;
+      }
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="full">
+  <div><img src="images/car.jpg" rel="IJSE logo" width="100%" height="100%"></div>
+  <div><img src="images/programming.jpg" rel="IJSE logo" width="100%" height="100%"></div>
+  <div><img src="images/data.jpg" rel="IJSE logo" width="100%" height="100%"></div>
+  <div><img src="images/toyota.jpg" rel="IJSE logo" width="100%" height="100%"></div>
+    <div><img src="images/software.jpg" rel="IJSE logo" width="100%" height="100%"></div>
+  </div>
+</section>
+</body>
+</html>
