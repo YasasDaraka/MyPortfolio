@@ -272,6 +272,9 @@ button>img{
 .social-icon-img {
     width: 4.336vw;
 }
+textarea{
+    resize: none;
+}
 /*-----------------------------------footer--------------------------------------*/
 footer>h5 {
     font-size: 2.334vw;

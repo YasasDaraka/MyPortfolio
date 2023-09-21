@@ -738,3 +738,6 @@ footer>h5 {
     transition: none;
     z-index: 25;
 }
+textarea{
+    resize: none;
+}

@@ -378,6 +378,9 @@ main>section:last-child>nav{
     display: flex;
     justify-items: center;
 }
+textarea{
+    resize: none;
+}
 /*-----------------------------------footer--------------------------------------*/
 footer>h5 {
     font-size: 3.634vw;
