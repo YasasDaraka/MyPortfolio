@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Case 1</title>
+  <base href="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+    div{
+      background-color: red;
+      width: 150px;
+      height: 70px;
+      position: relative;
+      top: 20px;
+      left: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: d;
+      animation-direction: alternate;
+      animation-delay: 1s;
+    }
+    @keyframes d {
+      0%{
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        transform: rotate(0deg);
+      }
+      25%{
+        background-color: #FCC419;
+        top: 20px;
+        left: 1200px;
+        transform: rotate(180deg);
+      }
+      50%{
+        background-color: #555555;
+        left: 1200px;
+        top: 550px;
+        transform: rotate(270deg);
+      }
+      75%{
+        background-color: green;
+        left: 20px;
+        top: 550px;
+        transform: rotate(360deg);
+      }
+      100%{
+        background-color: deeppink;
+        left: 20px;
+        top: 20px;
+        transform: rotate(0deg);
+      }
+
+    }
+  </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
