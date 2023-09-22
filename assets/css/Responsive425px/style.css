@@ -1,11 +1,13 @@
 @media all and (max-width: 425px) {
 
 /*-----------------------------------Home--------------------------------------*/
-
+section{
+    padding: 1.186vw;
+}
 header>section>h2{
     position: absolute;
     top: 4.5vw;
-    left: 35.1vw;
+    left: 33.4vw;
     font-size: 5.779vw;
 }
 header>section{
@@ -25,25 +27,25 @@ menu>a{
     padding-left: 1.112vw;
 }
 .homeBacground {
-    width: 147.65vw;
-    height: 90vw;
-    left: -25%;
+    width: calc(100%/100*102);
+    height: 85vw;
+    left: -2vw;
 }
 .profilePic {
     width: 31.5vw;
     height: 34.5vw;
-    right: 33.1vw;
-    top: 25.2vw;
+    right: 32.4vw;
+    top: 21.2vw;
 }
 main>section:first-child::before {
     height: 66.912vw;
 }
 main>section:first-child {
-    height: 75vw;
+    height: 79vw;
 }
 main>section>section {
     top: 66.567vw;
-    left: 2.01vw;
+    left: 5vw;
     text-align: center;
 }
 section>section>hgroup>h1{
@@ -78,6 +80,7 @@ main>section>section>a{
     flex-direction: column;
     align-items: center;
     width: 90%;
+    padding-left: 6.302vw;
 }
 .flex-item {
     max-width: calc(160%/3);
@@ -119,7 +122,7 @@ li, h4 {
 .sec-flex-item>h4{
     text-align: start;
     font-size: 4.7vw;
-    bottom: 29.343vw;
+    bottom: 24.343vw;
     padding-left: 4.302vw;
 }
 .sec-flex-item li{
@@ -130,7 +133,7 @@ li, h4 {
 
 }
 .sec-flex-item>div{
-    bottom: 30.743vw;
+    bottom: 25.743vw;
     left: -4.3vw;
     width: 7.336vw;
     height: 7.336vw;
@@ -154,7 +157,7 @@ li, h4 {
 }
 /*-----------------------------------Tools--------------------------------------*/
 .th-flex{
-
+    padding-bottom: 6vw;
 }
 .th-flex-item{
     max-width: calc(100%);
@@ -321,6 +324,7 @@ li, h4 {
     flex-direction: column;
     align-items: center;
     width: 91%;
+    padding-left: 4.586vw;
 }
 .contact-item-set{
     flex: 1;
