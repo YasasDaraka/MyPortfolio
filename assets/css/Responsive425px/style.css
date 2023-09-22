@@ -34,7 +34,7 @@ menu>a{
 .profilePic {
     width: 31.5vw;
     height: 34.5vw;
-    right: 32.4vw;
+    left: 32.4vw;
     top: 21.2vw;
 }
 main>section:first-child::before {
