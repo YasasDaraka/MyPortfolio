@@ -86,7 +86,7 @@ main>section>section>a{
     max-width: calc(160%/3);
 }
 .flex-item pre{
-    font-size: 3vw;
+    font-size: 3.1vw;
 }
 .flex-item h2{
     font-size: 4.779vw;
@@ -144,7 +144,7 @@ li, h4 {
 /*-----------------------------------Skill--------------------------------------*/
 .th-flex{
     flex-direction: column;
-    padding-left: 6.302vw;
+    padding-left: 2vw;
 }
 .th-flex-item{
     padding: 0;
