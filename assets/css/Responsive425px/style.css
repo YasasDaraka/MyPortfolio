@@ -41,7 +41,7 @@ main>section:first-child::before {
     height: 66.912vw;
 }
 main>section:first-child {
-    height: 79vw;
+    height: 88vw;
 }
 main>section>section {
     top: 66.567vw;
@@ -84,12 +84,14 @@ main>section>section>a{
 }
 .flex-item {
     max-width: calc(160%/3);
+    margin-bottom: 6vw;
 }
 .flex-item pre{
     font-size: 3.1vw;
 }
 .flex-item h2{
     font-size: 4.779vw;
+    margin-bottom: 5vw;
 }
 .flex-item div{
     padding-top: 1.993vw;
@@ -117,13 +119,13 @@ li, h4 {
     flex-direction: column;
 }
 .sec-flex-item{
-
+    width: calc(100%/100*43);
 }
 .sec-flex-item>h4{
     text-align: start;
     font-size: 4.7vw;
     bottom: 24.343vw;
-    padding-left: 4.302vw;
+    padding-left: 3.2vw;
 }
 .sec-flex-item li{
     margin-bottom: 2vw;
