@@ -373,8 +373,9 @@ button>img{
 
 .social-icon {
     width: 3.853vw;
-    bottom: 9.378vw;
-    left: 19.784vw;
+    bottom: 7.5vw;
+    left: calc(100%/100*20.65);
+
 }
 .social-icon-img {
     width: 7.336vw;
