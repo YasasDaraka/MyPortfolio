@@ -146,7 +146,7 @@ li, h4 {
 /*-----------------------------------Skill--------------------------------------*/
 .th-flex{
     flex-direction: column;
-    padding-left: 2vw;
+    padding-left: 0vw;
 }
 .th-flex-item{
     padding: 0;
