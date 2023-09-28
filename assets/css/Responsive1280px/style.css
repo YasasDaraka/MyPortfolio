@@ -457,6 +457,29 @@ main>section>section>a:hover{
     font-size: 19px;
     transition: all 0.5s;
 }
+#assign-css,#assign-tr,#assign-an,#assign-js{
+    transition: all 0.4s;
+}
+.assignment-item-img:hover #assign-tr ,.assignment-item-img:hover #assign-an,.assignment-item-img:hover #assign-js{
+    font-size: 25px;
+    transition: all 0.5s;
+    top: 110%;
+    bottom: -10%;
+    left: 11.5%;
+    right: 88.5%;
+    color: #E9C54A;
+
+}
+.assignment-item-img:hover #assign-css{
+    font-size: 25px;
+    transition: all 0.5s;
+    top: 110%;
+    bottom: -10%;
+    left: 36%;
+    right: 64%;
+    color: #E9C54A;
+
+}
 /*-----------------------------------Activity--------------------------------------*/
 .activity-item{
     width: 100%;
