@@ -15,36 +15,6 @@
     <link rel="stylesheet" href="assets/css/customer.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-
-    <style>
-        main{
-            width: 90%;
-            height: 80%;
-            position: absolute;
-            top: 9%;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        #detail{
-            width: 550px;
-            height: 200px;
-            position: absolute;
-            top: 50px;
-        }
-        #text{
-            position: absolute;
-            top: 80px;
-            left: 10px;
-            width: 96%;
-        }
-        table{
-            position: absolute;
-            bottom: 50px;
-            height: auto;;
-        }
-    </style>
 </head>
 <body class="bg-body-secondary">
 <header>
@@ -91,7 +61,7 @@
         </div>
     </nav>
 </header>
-<main>
+<main id="menu">
 <div id="detail" class="container p-0 rounded-4 bg-white">
     <div class="bg-success position-absolute top-0 rounded-top-4 d-flex justify-content-center align-items-center" style="height: 45px; width: 100%">
         <h3 class="fs-5 text-white">Customer Search</h3>
@@ -103,7 +73,8 @@
         <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
         <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
         <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
-        <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Add Customer</button>
+        <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">
+            <a href="#cus-reg" class="text-white text-decoration-none">Add Customer</a></button>
     </div>
 </div>
 <div id="table">
@@ -139,6 +110,40 @@
                 </tbody>
             </table>
 </div>
+    <section id="cus-reg">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-4" style="background-color: azure">
+                <div class="modal-header d-flex justify-content-center align-items-center rounded-top-4 " style="background-color:#85C1E9">
+                    <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Add New
+                        Customer</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <br>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input class="form-control rounded-4 w-75"  placeholder="Customer ID" type="text">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input class="form-control rounded-4 w-75" placeholder="Customer Name" type="text">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input class="form-control rounded-4 w-75" placeholder="Customer Address" type="text">
+                        </div>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input class="form-control rounded-4 w-75" placeholder="Customer Salary" type="text">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex position-relative start-50 justify-content-around w-50">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-warning">Update</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-info">
+                        <a href="#menu" class="text-white text-decoration-none">close</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>

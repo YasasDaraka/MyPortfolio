@@ -1,0 +1,50 @@
+#cus-reg{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 35%;
+    margin: auto;
+}
+main{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#detail{
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+}
+#text{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 96%;
+}
+table{
+    position: absolute;
+    bottom: 50px;
+    height: auto;;
+}
+#cus-reg {
+    display: none;
+}
+
+#cus-reg:target {
+    display: block;
+}
+#cus-reg:target #back{
+
+}
+#menu:target #cus-reg{
+    display: none;
+}
