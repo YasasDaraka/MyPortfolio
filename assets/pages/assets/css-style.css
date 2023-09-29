@@ -153,3 +153,29 @@ h2{
     font-size: 2.8vw;
     transition: all 0.5s;
 }
+@media all and (min-width:425px) and (max-width: 768px) {
+    .headlines{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    footer>h5 {
+        font-size: 2.334vw;
+    }
+}
+@media all and (max-width: 425px) {
+    h2{
+        right: 6%;
+        font-size: 3.5vw;
+    }
+    .headlines{
+        font-size: 5vw;
+    }
+    main section:hover h2{
+        transform: scale(1.1);
+    }
+    footer>h5 {
+        font-size: 3.634vw;
+    }
+}
