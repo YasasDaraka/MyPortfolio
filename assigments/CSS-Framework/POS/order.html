@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order manage</title>
+  <title>Document Meta Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="theme-color" content="red">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/css/order.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+</head>
+<body class="bg-body-secondary">
+
+<header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is my image" >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="customer.html">Customer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="item.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Orders</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">log Out</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="menu">
+  <div class="container text-center" style="margin-top: 30px; background-color: aliceblue;">
+    <div class="row">
+      <div class="col" style="height: 330px; margin-right: 30px;">
+        <h3 class="bg-success rounded-4" style="color: white; width: 400px;">Invoice Details</h3>
+
+
+        <div class="container text-center" style="margin-top: 30px;">
+          <div class="row">
+            <div class="col">
+              Order ID:
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col">
+              Date :
+              <input type="date" class="form-control" placeholder="">
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              Cus ID :
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">C001</option>
+                <option value="2">C002</option>
+                <option value="3">C003</option>
+              </select>
+            </div>
+            <div class="col">
+              Cus Name:
+              <input type="text" class="form-control" placeholder="">
+            </div>
+
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  Salary :
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                  Address :
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col" style="height: 330px; margin-right: 30px;">
+        <h3 class="bg-success rounded-4" style="color: white;width: 400px;">Item Select</h3>
+        <!-- code here -->
+        <div class="container text-center" style="margin-top: 30px;">
+          <div class="row">
+            <div class="col">
+              Item Code :
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Itm001</option>
+                <option value="2">Itm002</option>
+                <option value="3">Itm003</option>
+              </select>
+            </div>
+            <div class="col">
+              Item Name :
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Soap</option>
+                <option value="2">Banana</option>
+                <option value="3">Fish</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              Price :
+              <input type="text" class="form-control" placeholder="">
+
+            </div>
+            <div class="col">
+              QtyOnHand :
+              <input type="text" class="form-control" placeholder="">
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              OrderQTY :
+              <input type="text" class="form-control" placeholder="">
+
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-danger" style="margin-top: 70px;">Add Item</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col" style="height: 330px; height: 340px; width: auto; background-color: rgba(36,113,163,0.2);">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col" style="color: blue;font-size: 30px;">
+              Total
+              <label class="form-label" style="font-size: 40px;color: red;">5000.00</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              Cash :
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              Balance :
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-primary" style="margin-top: 30px;">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="table">
+    <table class="table bg-light table-bordered table-hover w-100">
+      <thead class=" bg-success text-light text-center">
+      <tr>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Price</th>
+        <th>Quentity</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+      <tbody id="customerTable">
+      <tr>
+        <td>Itm002</td>
+        <td>Soap</td>
+        <td>100</td>
+        <td>2</td>
+        <td>100</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+</body>
+</html>
