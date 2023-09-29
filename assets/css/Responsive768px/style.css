@@ -168,6 +168,17 @@ li, h4 {
 
 }
 /*-----------------------------------Activity--------------------------------------*/
+.assignment-item-img:hover #assign-tr ,.assignment-item-img:hover #assign-an,.assignment-item-img:hover #assign-js{
+    font-size: 20px;
+    left: 18%;
+    right: 82%;
+}
+.assignment-item-img:hover #assign-css{
+    font-size: 20px;
+    left: 39%;
+    right: 61%;
+}
+/*-----------------------------------Activity--------------------------------------*/
 .activity-item{
     flex-wrap: wrap;
 }

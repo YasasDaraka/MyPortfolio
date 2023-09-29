@@ -220,7 +220,7 @@ li, h4 {
     border-radius: 10%;
     margin-right: 6.186vw;
     margin-top: 3.558vw;
-    margin-bottom: 2.965vw;
+    margin-bottom: 8vw;
 }
 .as-img{
     width: 37.119vw;
@@ -241,6 +241,20 @@ li, h4 {
 }
 .assignment-item-img:hover .assignment-div>h3{
     font-size: 5.1vw;
+}
+.assignment-item-img:hover #assign-tr ,.assignment-item-img:hover #assign-an,.assignment-item-img:hover #assign-js{
+    font-size: 16px;
+    left: 21%;
+    right: 79%;
+    top: 105%;
+    bottom: -15%;
+}
+.assignment-item-img:hover #assign-css{
+    font-size: 16px;
+    left: 39%;
+    right: 61%;
+    top: 105%;
+    bottom: -15%;
 }
 /*-----------------------------------Activity--------------------------------------*/
 .activity-item{
