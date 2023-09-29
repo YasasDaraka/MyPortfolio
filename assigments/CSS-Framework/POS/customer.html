@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 </head>
 <body class="bg-body-secondary">
+
 <header>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -74,7 +75,7 @@
         <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
         <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
         <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">
-            <a href="#cus-reg" class="text-white text-decoration-none">Add Customer</a></button>
+            <a href="#back" class="text-white text-decoration-none">Add Customer</a></button>
     </div>
 </div>
 <div id="table">
@@ -110,6 +111,7 @@
                 </tbody>
             </table>
 </div>
+    <section id="back">
     <section id="cus-reg">
         <div class="modal-dialog">
             <div class="modal-content rounded-4" style="background-color: azure">
@@ -134,15 +136,16 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer d-flex position-relative start-50 justify-content-around w-50">
-                    <button type="button" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-warning">Update</button>
-                    <button type="button" class="btn btn-danger">Delete</button>
-                    <button type="button" class="btn btn-info">
+                <div class="modal-footer d-flex position-relative start-50 justify-content-center w-50">
+                    <button type="button" class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">Save</button>
+                    <button type="button" class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3">Update</button>
+                    <button type="button" class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3">Delete</button>
+                    <button type="button" class="btn btn-info ms-3 mb-3 ms-md-3 ms-lg-3">
                         <a href="#menu" class="text-white text-decoration-none">close</a></button>
                 </div>
             </div>
         </div>
+    </section>
     </section>
 </main>
 </body>
