@@ -39,6 +39,10 @@ main section:hover h2{
     text-shadow: 0 2px 4px rgb(86, 101, 115);
     transition: all 0.2s;
 }
+main section:hover{
+    box-shadow: 0 4px 30px 2px rgba(233, 197, 74, 0.6);
+    transition: all 0.2s;
+}
 /*--------------------------------Custom Cursor----------------------------------*/
 .custom-cursor {
     width: 20px;
@@ -69,12 +73,13 @@ main section{
     height: 20vw;
     flex-shrink: 0;
     border-radius: 10px;
-    background: #050509;
-    box-shadow: 0 4px 30px 2px rgba(233, 197, 74, 0.5);
+    background: rgba(29, 29, 29, 0.7);
+    box-shadow: 0 4px 30px 2px rgba(113, 113, 113, 0.6);
     margin: auto;
     position: relative;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    transition: all 0.5s;
 }
 .headlines{
     color: white;
