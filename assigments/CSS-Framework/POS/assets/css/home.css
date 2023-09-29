@@ -1,0 +1,11 @@
+main{
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.2s;
+}
