@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Register</title>
+  <title>Document Meta Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="theme-color" content="red">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/css/customer.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
+  <style>
+    main{
+      width: 50%;
+      height: 40%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body class="bg-body-secondary">
+<header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is my image" >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Items</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">log Out</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4" style="background-color: azure">
+      <div class="modal-header d-flex justify-content-center align-items-center rounded-top-4 " style="background-color:#85C1E9">
+        <h1 class="modal-title fs-5 text-secondary" id="exampleModalLabel">Add New
+          Customer</h1>
+      </div>
+      <div class="modal-body">
+        <form>
+          <br>
+          <div class="mb-3 d-flex justify-content-center">
+            <input class="form-control rounded-4 w-75"  placeholder="Customer ID" type="text">
+          </div>
+          <div class="mb-3 d-flex justify-content-center">
+            <input class="form-control rounded-4 w-75" placeholder="Customer Name" type="text">
+          </div>
+          <div class="mb-3 d-flex justify-content-center">
+            <input class="form-control rounded-4 w-75" placeholder="Customer Address" type="text">
+          </div>
+          <div class="mb-3 d-flex justify-content-center">
+            <input class="form-control rounded-4 w-75" placeholder="Customer Salary" type="text">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex position-relative start-50 justify-content-around w-50">
+        <button type="button" class="btn btn-danger">Save</button>
+        <button type="button" class="btn btn-warning">Update</button>
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</main>
+</body>
+</html>

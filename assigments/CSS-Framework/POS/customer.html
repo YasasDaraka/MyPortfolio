@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customer manage</title>
+    <title>Document Meta Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="YASAS,GDSE66">
+    <meta name="description" content="FullStack Developer">
+    <meta name="owner" content="Yasas">
+    <meta name="author" content="Yasas">
+    <meta name="theme-color" content="red">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="assets/css/customer.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
+    <style>
+        main{
+            width: 90%;
+            height: 80%;
+            position: absolute;
+            top: 9%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        #detail{
+            width: 550px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+        }
+        #text{
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            width: 96%;
+        }
+        table{
+            position: absolute;
+            bottom: 50px;
+            height: auto;;
+        }
+    </style>
+</head>
+<body class="bg-body-secondary">
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is my image" >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Items</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">log Out</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+<div id="detail" class="container p-0 rounded-4 bg-white">
+    <div class="bg-success position-absolute top-0 rounded-top-4 d-flex justify-content-center align-items-center" style="height: 45px; width: 100%">
+        <h3 class="fs-5 text-white">Customer Search</h3>
+    </div>
+    <div id="text" class="input-group">
+        <input class="form-control" id="custId" placeholder="Input Customer ID" type="text">
+    </div>
+    <div class="modal-footer position-absolute bottom-0 d-flex justify-content-around w-50 h-25">
+        <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
+        <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
+        <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
+    </div>
+</div>
+<div id="table">
+            <table class="table bg-light table-bordered table-hover w-100">
+                <thead class="bg-success text-light text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable">
+                <tr>
+                    <td>C001</td>
+                    <td>Yasas</td>
+                    <td>Hikkaduwa</td>
+                    <td>100000</td>
+                </tr>
+
+                <tr>
+                    <td>C002</td>
+                    <td>Bethmi</td>
+                    <td>Galle</td>
+                    <td>500000</td>
+                </tr>
+                <tr>
+                    <td>C003</td>
+                    <td>Manith</td>
+                    <td>Galle</td>
+                    <td>100000</td>
+                </tr>
+                </tbody>
+            </table>
+</div>
+</main>
+</body>
+</html>
