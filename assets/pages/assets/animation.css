@@ -167,6 +167,7 @@ h2{
 @media all and (max-width: 425px) {
     h2{
         right: 6%;
+        left: 62%;
         font-size: 3.5vw;
     }
     .headlines{
