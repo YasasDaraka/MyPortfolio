@@ -113,7 +113,7 @@
         <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
         <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
         <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">
-          <a href="#cus-back" class="text-white text-decoration-none">Add Customer</a></button>
+          <a id="add-cus" href="#" class="text-white text-decoration-none">Add Customer</a></button>
       </div>
     </div>
     <div>
@@ -179,7 +179,7 @@
               <button type="button" class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3">Update</button>
               <button type="button" class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3">Delete</button>
               <button type="button" class="btn btn-info ms-3 mb-3 ms-md-3 ms-lg-3">
-                <a href="#cus-menu" class="text-white text-decoration-none">close</a></button>
+                <a id="add-cus-close" href="#" class="text-white text-decoration-none">close</a></button>
             </div>
           </div>
         </div>
@@ -522,11 +522,17 @@
   const home = document.getElementById("home");
   const item = document.getElementById("item");
   const order = document.getElementById("order");
+  const cusReg = document.getElementById("cus-back");
+
   const btnCus = document.getElementById("btn-cust");
   const btnItem = document.getElementById("btn-item");
   const btnOrder = document.getElementById("btn-order");
+  const btnAddCus = document.getElementById("add-cus");
+  const btnCloseAdCus = document.getElementById("add-cus-close");
 
   customer.style.display = "none";
+  cusReg.style.display = "none";
+
   item.style.display = "none";
   order.style.display = "none";
   btnCus.addEventListener("click",function () {
@@ -542,6 +548,21 @@
       order.style.display = "none";
     }
   });
+  btnAddCus.addEventListener("click",function () {
+    if (cusReg.style.display==="none"){
+      cusReg.style.display = "block";
+    }else {
+      cusReg.style.display = "none";
+    }
+  })
+  btnCloseAdCus.addEventListener("click",function () {
+    if (cusReg.style.display==="block"){
+      cusReg.style.display = "none";
+    }else {
+      cusReg.style.display = "block";
+    }
+  })
+
   btnItem.addEventListener("click",function () {
     if (item.style.display==="none"){
       item.style.display = "block";
