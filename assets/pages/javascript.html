@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript Assigments</title>
+  <base href="">
+  <title>Document Meta Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <link rel="icon" href="assets/other/user.png">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="theme-color" content="red">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/javascript.css">
+</head>
+<body>
+<!---------------------------------Custom Cursor------------------------------------>
+<div class="custom-cursor"></div>
+<div class="custom-cursor-tw"></div>
+<script>
+  const customCursor = document.querySelector(".custom-cursor");
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    customCursor.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  const customCurs = document.querySelector(".custom-cursor-tw");
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    customCurs.style.transform = `translate(${x}px, ${y}px)`;
+  });
+</script>
+<main>
+  <h1 class="headlines"><span style="color: darkgoldenrod">JavaScript </span>Assignments</h1>
+<section>
+  <div class="project-item-img">
+    <img class="pro-img" src="" alt="">
+    <a href="../../assigments/JS/SPA/home.html" target="_blank">
+      <div class="div">
+        <img class="more-img" src="assets/images/other.png" alt="">
+        <h3>View</h3>
+      </div>
+    </a>
+  </div>
+  <h2>Assigment <span style="color: #E9C54A">1</span></h2>
+</section>
+</main>
+<footer>
+  <h5>Developed by Yasas Daraka&copy;</h5>
+</footer>
+</body>
+</html>
