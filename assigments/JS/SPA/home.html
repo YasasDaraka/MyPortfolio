@@ -589,6 +589,21 @@
     });
   });
 
+  const btnOrderElements = document.querySelectorAll(".order-nav");
+
+  btnOrderElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+      if (order.style.display==="none"){
+        order.style.display = "block";
+        customer.style.display = "none";
+        home.style.display = "none";
+        item.style.display = "none";
+      }else{
+        order.style.display = "none";
+      }
+    });
+  });
+
   btnCus.addEventListener("click",function () {
     if (customer.style.display==="none"){
       customer.style.display = "block";
