@@ -9,3 +9,102 @@ main{
     margin: auto;
     transition: all 0.2s;
 }
+#home{
+    width: 100%;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#customer{
+    width: 100%;
+    height: 95vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#cus-reg{
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+}
+#cus-detail{
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+}
+#cus-text{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 96%;
+}
+#cus-table{
+    position: absolute;
+    bottom: 50px;
+    height: auto;;
+}
+
+#cus-back{
+    position: absolute;
+    width: 111.3%;
+    height: 100vh;
+    left: -5.8%;
+    top: -18.3%;
+    background-color: rgba(86, 101, 115, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+#item-reg{
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+}
+#item-detail{
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+}
+#item-text{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 96%;
+}
+#item-table{
+    position: absolute;
+    bottom: 50px;
+    height: auto;;
+}
+#item-back{
+    position: absolute;
+    width: 111.3%;
+    height: 100vh;
+    left: -5.8%;
+    top: -18.3%;
+    background-color: rgba(86, 101, 115, 0.5);
+    z-index: 1;
+    display: none;
+}
+#order-table{
+    position: absolute;
+    bottom: 50px;
+    height: auto;;
+}
