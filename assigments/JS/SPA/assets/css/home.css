@@ -94,10 +94,10 @@ main{
 }
 #item-back{
     position: absolute;
-    width: 111.3%;
+    width: 105.8%;
     height: 100vh;
     left: -5.8%;
-    top: -18.3%;
+    top: 0;
     background-color: rgba(86, 101, 115, 0.5);
     z-index: 1;
     display: none;

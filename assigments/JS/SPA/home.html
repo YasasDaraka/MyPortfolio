@@ -19,7 +19,6 @@
 <body class="bg-body-secondary">
 <section id="home">
 <header>
-
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" >
@@ -64,7 +63,6 @@
 </section>
 <section id="customer">
   <header>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" >
@@ -236,7 +234,7 @@
         <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
         <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
         <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">
-          <a href="#item-back" class="text-white text-decoration-none">Add Item</a></button>
+          <a id="add-item" href="#" class="text-white text-decoration-none">Add Item</a></button>
       </div>
     </div>
     <div>
@@ -272,44 +270,46 @@
         </tbody>
       </table>
     </div>
-    <section id="item-back">
-      <section id="item-reg">
-        <div class="modal-dialog">
-          <div class="modal-content rounded-4" style="background-color: azure">
-            <div class="modal-header d-flex justify-content-center align-items-center rounded-top-4 " style="background-color:#85C1E9">
-              <h1 class="modal-title fs-5 text-secondary">Add New
-                Item</h1>
-            </div>
-            <div class="modal-body">
-              <form>
-                <br>
-                <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75"  placeholder="Item Code" type="text">
-                </div>
-                <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Item Name" type="text">
-                </div>
-                <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Item Price" type="text">
-                </div>
-                <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Item Quantity" type="text">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer d-flex position-relative start-50 justify-content-center w-50">
-              <button type="button" class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">Save</button>
-              <button type="button" class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3">Update</button>
-              <button type="button" class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3">Delete</button>
-              <button type="button" class="btn btn-info ms-3 mb-3 ms-md-3 ms-lg-3">
-                <a href="#item-menu" class="text-white text-decoration-none">close</a></button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
   </main>
 </section>
+
+<section id="item-back">
+  <section id="item-reg">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4" style="background-color: azure">
+        <div class="modal-header d-flex justify-content-center align-items-center rounded-top-4 " style="background-color:#85C1E9">
+          <h1 class="modal-title fs-5 text-secondary">Add New
+            Item</h1>
+        </div>
+        <div class="modal-body">
+          <form>
+            <br>
+            <div class="mb-3 d-flex justify-content-center">
+              <input class="form-control rounded-4 w-75"  placeholder="Item Code" type="text">
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <input class="form-control rounded-4 w-75" placeholder="Item Name" type="text">
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <input class="form-control rounded-4 w-75" placeholder="Item Price" type="text">
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <input class="form-control rounded-4 w-75" placeholder="Item Quantity" type="text">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex position-relative start-50 justify-content-center w-50">
+          <button type="button" class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">Save</button>
+          <button type="button" class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3">Update</button>
+          <button type="button" class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3">Delete</button>
+          <button type="button" class="btn btn-info ms-3 mb-3 ms-md-3 ms-lg-3">
+            <a id="add-item-close" href="#" class="text-white text-decoration-none">close</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
 <section id="order">
   <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -446,7 +446,7 @@
 
               </div>
               <div class="col">
-                <button type="button" class="btn btn-danger" style="margin-top: 70px;">Add Item</button>
+                <button id="order-btn-add-item" type="button" class="btn btn-danger" style="margin-top: 70px;">Add Item</button>
               </div>
             </div>
           </div>
@@ -523,18 +523,27 @@
   const item = document.getElementById("item");
   const order = document.getElementById("order");
   const cusReg = document.getElementById("cus-back");
+  const itemReg = document.getElementById("item-back");
 
   const btnCus = document.getElementById("btn-cust");
-  const btnItem = document.getElementById("btn-item");
-  const btnOrder = document.getElementById("btn-order");
   const btnAddCus = document.getElementById("add-cus");
   const btnCloseAdCus = document.getElementById("add-cus-close");
+
+  const btnItem = document.getElementById("btn-item");
+  const btnAdditem = document.getElementById("add-item");
+  const btnCloseAditem = document.getElementById("add-item-close");
+
+  const btnOrder = document.getElementById("btn-order");
+  const btnOrderAdItem = document.getElementById("order-btn-add-item");
 
   customer.style.display = "none";
   cusReg.style.display = "none";
 
   item.style.display = "none";
+  itemReg.style.display = "none";
+
   order.style.display = "none";
+
   btnCus.addEventListener("click",function () {
     if (customer.style.display==="none"){
       customer.style.display = "block";
@@ -554,14 +563,14 @@
     }else {
       cusReg.style.display = "none";
     }
-  })
+  });
   btnCloseAdCus.addEventListener("click",function () {
     if (cusReg.style.display==="block"){
       cusReg.style.display = "none";
     }else {
       cusReg.style.display = "block";
     }
-  })
+  });
 
   btnItem.addEventListener("click",function () {
     if (item.style.display==="none"){
@@ -576,6 +585,21 @@
       order.style.display = "none";
     }
   });
+  btnAdditem.addEventListener("click",function () {
+    if (itemReg.style.display==="none"){
+      itemReg.style.display = "block";
+    }else {
+      itemReg.style.display = "none";
+    }
+  });
+  btnCloseAditem.addEventListener("click",function () {
+    if (itemReg.style.display==="block"){
+      itemReg.style.display = "none";
+    }else {
+      itemReg.style.display = "block";
+    }
+  });
+
   btnOrder.addEventListener("click",function () {
     if(order.style.display==="none"){
       order.style.display = "block";
@@ -587,6 +611,13 @@
       customer.style.display = "none";
       item.style.display = "none";
       order.style.display = "none";
+    }
+  });
+  btnOrderAdItem.addEventListener("click",function () {
+    if (itemReg.style.display==="none"){
+      itemReg.style.display = "block";
+    }else {
+      itemReg.style.display = "none";
     }
   })
 
