@@ -7,5 +7,9 @@ main{
     right: 0;
     bottom: 0;
     margin: auto;
-    transition: all 0.2s;
+}
+table{
+    position: absolute;
+    bottom: 50px;
+    height: auto;;
 }
