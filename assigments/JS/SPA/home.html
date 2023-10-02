@@ -71,16 +71,16 @@
               <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is my image" >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active home-nav" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Customer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Items</a>
+              <a class="nav-link active item-nav" aria-current="page" href="#">Items</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Orders</a>
+              <a class="nav-link active order-nav" aria-current="page" href="#">Orders</a>
             </li>
 
           </ul>
@@ -195,16 +195,16 @@
               <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is my image" >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active home-nav" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Customer</a>
+              <a class="nav-link active cus-nav" aria-current="page" href="#">Customer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Items</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Orders</a>
+              <a class="nav-link active order-nav" aria-current="page" href="#">Orders</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -320,13 +320,13 @@
             <img class="profilePic" width="80px" src="assets/images/supermarket.jpg" alt="This is image" >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active home-nav" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Customer</a>
+            <a class="nav-link active cus-nav" aria-current="page" href="#">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Items</a>
+            <a class="nav-link active item-nav" aria-current="page" href="#">Items</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Orders</a>
@@ -543,6 +543,51 @@
   itemReg.style.display = "none";
 
   order.style.display = "none";
+
+  const btnHomeElements = document.querySelectorAll(".home-nav");
+
+  btnHomeElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+      if (home.style.display==="none"){
+        home.style.display = "block";
+        item.style.display = "none";
+        customer.style.display = "none";
+        order.style.display = "none";
+      }else{
+        home.style.display = "none";
+      }
+    });
+  });
+
+  const btnCustomerElements = document.querySelectorAll(".cus-nav");
+
+  btnCustomerElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+      if (customer.style.display==="none"){
+        customer.style.display = "block";
+        item.style.display = "none";
+        home.style.display = "none";
+        order.style.display = "none";
+      }else{
+        customer.style.display = "none";
+      }
+    });
+  });
+
+  const btnItemElements = document.querySelectorAll(".item-nav");
+
+  btnItemElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+      if (item.style.display==="none"){
+        item.style.display = "block";
+        customer.style.display = "none";
+        home.style.display = "none";
+        order.style.display = "none";
+      }else{
+        item.style.display = "none";
+      }
+    });
+  });
 
   btnCus.addEventListener("click",function () {
     if (customer.style.display==="none"){
