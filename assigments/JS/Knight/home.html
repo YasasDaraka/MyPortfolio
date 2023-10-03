@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>customer manage</title>
+  <title>Document Meta Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="YASAS,GDSE66">
+  <meta name="description" content="FullStack Developer">
+  <meta name="owner" content="Yasas">
+  <meta name="author" content="Yasas">
+  <meta name="theme-color" content="red">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <style>
+    body{
+      background-color: rgba(5, 5, 9, 0.92);
+      background-image: url("assets/images/pxfuel.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    #logo{
+      display: inline-block;
+      position: absolute;
+      width: 300px;
+      left: 50%;
+      top: 8%;
+
+    }
+    #gear{
+      display: inline-block;
+      position: absolute;
+      top: 7%;
+      left: -5%;
+    }
+    #container{
+      position:absolute;
+      top:-25%;
+      bottom:0;
+      left:22%;
+      right:0;
+      margin:auto;
+      display: flex;
+      width: 70%;
+      height: 10vh;
+    }
+    .id{
+      flex:1;
+      max-width: calc(100%/16*1);
+      height: 100%;
+      border: 1px solid #A93226;
+    }
+    .first{
+      border-bottom-left-radius: 50% ;
+      border-top-left-radius: 50% ;
+    }
+    .last{
+      border-bottom-right-radius: 50% ;
+      border-top-right-radius: 50% ;
+    }
+    #start{
+      position:absolute;
+      display: inline-block;
+      top: 19.2%;
+      bottom: 0;
+      left: 4.3%;
+      right:0;
+      width: 43px;
+      height: 30px;
+      background-color: #2471A3;
+      align-items: center;
+      z-index: 5;
+      font-size: 13px;
+      color: white;
+      font-weight: 600;
+    }
+    #stop{
+      position:absolute;
+      display: inline-block;
+      top: 19.2%;
+      bottom: 0;
+      left: 17.8%;
+      right:0;
+      width: 43px;
+      height: 30px;
+      background-color: #A93226;
+      align-items: center;
+      z-index: 5;
+      font-size: 13px;
+      color: white;
+      font-weight: 600;
+    }
+    #meter{
+      transform: rotate(270deg);
+      position:absolute;
+      display: inline-block;
+      top: 50.5%;
+      bottom: 0;
+      left: 4.55%;
+      right:0;
+      width: 130px;
+      height: 15px;
+      z-index: 5;
+      background-color: #A93226;
+      appearance: none;
+    }
+    #music-start{
+      position:absolute;
+      display: inline-block;
+      top: 34.8%;
+      bottom: 0;
+      left: 4.3%;
+      right:0;
+      width: 43px;
+      height: 30px;
+      background-color: #2471A3;
+      align-items: center;
+      z-index: 5;
+      font-size: 12px;
+      color: white;
+      font-weight: 600;
+    }
+    #music-stop{
+      position:absolute;
+      display: inline-block;
+      top: 34.8%;
+      bottom: 0;
+      left: 17.8%;
+      right:0;
+      width: 43px;
+      height: 30px;
+      background-color: #A93226;
+      align-items: center;
+      z-index: 5;
+      font-size: 13px;
+      color: white;
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+<input id="meter" type="range" min="0" max="100">
+<button type="button" id="start">Start</button>
+<button type="button" id="stop">Stop</button>
+<button type="button" id="music-start">ON</button>
+<button type="button" id="music-stop">OFF</button>
+<audio id="audio" src="assets/music/ThemeSong.mp3"></audio>
+<div id="logo">
+  <img src="assets/images/ride.png" alt="This is instagram" style="width: 300px">
+</div>
+<div id="gear">
+  <img src="assets/images/output.gif" alt="This is instagram">
+</div>
+<section id="container">
+  <div class="id first"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id last"></div>
+</section>
+<script>
+  let colours = ["#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322633","#A9322666", "#A932269A", "#A93226CB", "#A93226"];
+  let revColours = ["#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A9322600","#A93226","#A93226CB","#A932269A","#A9322666","#A9322633"];
+  let ids = document.querySelectorAll(".id");
+  let btnStart = document.querySelector("#start");
+  let btnStop = document.querySelector("#stop");
+  let meterInput = document.getElementById("meter");
+  let musicStart = document.querySelector("#music-start");
+  let musicStop = document.querySelector("#music-stop");
+  let count = 0;
+  let reverse = true;
+  let interval;
+
+  let stop;
+  btnStart.addEventListener("click",function (){
+    task();
+  });
+  btnStop.addEventListener("click",function (){
+  clearInterval(stop);
+  });
+  meterInput.addEventListener("input",function (){
+    task();
+  });
+  function task(){
+    clearInterval(stop);
+    let limit = 50;
+    let meterValue = meterInput.value;
+    if (meterValue >= 0 && meterValue <= 100) {
+      limit = 100 - meterValue;
+    }
+    stop=setInterval(function() {
+      if(reverse){
+        var color = colours.pop();
+        colours.unshift(color);
+        ids.forEach(function(element, index) {
+          element.style.backgroundColor = colours[index];
+        });
+        count++;
+        if(count==22){
+          reverse=false;
+        }
+      } if(reverse==false){
+        var revCo = revColours.shift();
+        revColours.push(revCo);
+        ids.forEach(function(element, index) {
+          element.style.backgroundColor = revColours[index];
+        });
+        count--;
+        if (count == 1) {
+          reverse = true;
+        }
+      }
+    }, limit);
+  }
+  let isMusicPlaying = false;
+  function playMusic() {
+    audio.play();
+    isMusicPlaying = true;
+  }
+
+  function stopMusic() {
+    audio.pause();
+    audio.currentTime = 0;
+    isMusicPlaying = false;
+  }
+  if (audio.canPlayType && audio.canPlayType("audio/mp3") !== "") {
+    musicStart.style.display = "inline-block";
+    musicStop.style.display = "inline-block";
+  } else {
+    musicStart.style.display = "none";
+    musicStop.style.display = "none";
+  }
+  musicStart.addEventListener("click", function () {
+    if (!isMusicPlaying) {
+      playMusic();
+      musicStart.disabled = true;
+      musicStop.disabled = false;
+    }
+  });
+  musicStop.addEventListener("click", function () {
+    if (isMusicPlaying) {
+      stopMusic();
+      musicStart.disabled = false;
+      musicStop.disabled = true;
+    }
+  });
+
+
+</script>
+
+
+</body>
+</html>

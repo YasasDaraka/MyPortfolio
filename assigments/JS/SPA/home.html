@@ -114,7 +114,7 @@
           <a id="add-cus" href="#" class="text-white text-decoration-none">Add Customer</a></button>
       </div>
     </div>
-    <div>
+    <div >
       <table id="cus-table" class="table bg-light table-bordered table-hover w-100">
         <thead class="bg-success text-light text-center">
         <tr>
@@ -124,26 +124,8 @@
           <th>Salary</th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-          <td>C001</td>
-          <td>Yasas</td>
-          <td>Hikkaduwa</td>
-          <td>100000</td>
-        </tr>
+        <tbody id="tbody">
 
-        <tr>
-          <td>C002</td>
-          <td>Bethmi</td>
-          <td>Galle</td>
-          <td>500000</td>
-        </tr>
-        <tr>
-          <td>C003</td>
-          <td>Manith</td>
-          <td>Galle</td>
-          <td>100000</td>
-        </tr>
         </tbody>
       </table>
     </div>
@@ -159,21 +141,21 @@
               <form>
                 <br>
                 <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75"  placeholder="Customer ID" type="text">
+                  <input id="cus-id" class="form-control rounded-4 w-75"  placeholder="Customer ID" type="text">
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Customer Name" type="text">
+                  <input id="cus-name" class="form-control rounded-4 w-75" placeholder="Customer Name" type="text">
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Customer Address" type="text">
+                  <input id="cus-address" class="form-control rounded-4 w-75" placeholder="Customer Address" type="text">
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                  <input class="form-control rounded-4 w-75" placeholder="Customer Salary" type="text">
+                  <input id="cus-salary" class="form-control rounded-4 w-75" placeholder="Customer Salary" type="text">
                 </div>
               </form>
             </div>
             <div class="modal-footer d-flex position-relative start-50 justify-content-center w-50">
-              <button type="button" class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">Save</button>
+              <button id="btn-cus-save" type="button" class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3">Save</button>
               <button type="button" class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3">Update</button>
               <button type="button" class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3">Delete</button>
               <button type="button" class="btn btn-info ms-3 mb-3 ms-md-3 ms-lg-3">
@@ -505,13 +487,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Itm002</td>
-          <td>Soap</td>
-          <td>100</td>
-          <td>2</td>
-          <td>100</td>
-        </tr>
+
         </tbody>
       </table>
     </div>
@@ -680,6 +656,47 @@
       itemReg.style.display = "none";
     }
   })
+  const cusId = document.getElementById("cus-id");
+  const cusName = document.getElementById("cus-name");
+  const cusAddress = document.getElementById("cus-address");
+  const cusSalary = document.getElementById("cus-salary");
+
+  const saveCus = document.getElementById("btn-cus-save");
+
+  const cusAr=new Array();
+
+  saveCus.addEventListener("click",function () {
+    const custom = {
+      id: cusId.value,
+      name: cusName.value,
+      address: cusAddress.value,
+      salary: cusSalary.value
+    };
+
+    cusAr.push(custom);
+    let body=document.querySelector("#tbody");
+
+    let tr=document.createElement("tr");
+    let ids=document.createElement("td");
+    let names=document.createElement("td");
+    let add=document.createElement("td");
+    let salar=document.createElement("td");
+
+    ids.textContent=cusId.value;
+    names.textContent=cusName.value;
+    add.textContent=cusAddress.value;
+    salar.textContent=cusSalary.value;
+
+    tr.append(ids,names,add,salar);
+    body.append(tr);
+
+    cusId.value = "";
+    cusName.value = "";
+    cusAddress.value = "";
+    cusSalary.value = "";
+
+    console.log(cusAr);
+  });
 
 </script>
 </body>
