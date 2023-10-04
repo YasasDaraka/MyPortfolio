@@ -183,23 +183,37 @@
   let count = 0;
   let reverse = true;
   let interval;
-
   let stop;
+  let isMusicPlaying = false;
+  let stopAudio;
   btnStart.addEventListener("click",function (){
     task();
   });
   btnStop.addEventListener("click",function (){
   clearInterval(stop);
+    if (isMusicPlaying) {
+      stopMusic();
+      musicStart.disabled = false;
+      musicStop.disabled = true;
+    }
   });
   meterInput.addEventListener("input",function (){
     task();
   });
   function task(){
     clearInterval(stop);
+    clearInterval(stopAudio);
     let limit = 50;
     let meterValue = meterInput.value;
     if (meterValue >= 0 && meterValue <= 100) {
       limit = 100 - meterValue;
+    }
+    if (!isMusicPlaying) {
+      stopAudio = setInterval(function () {
+        playMusic();
+        musicStart.disabled = true;
+        musicStop.disabled = false;
+      },20);
     }
     stop=setInterval(function() {
       if(reverse){
@@ -225,8 +239,6 @@
       }
     }, limit);
   }
-  let isMusicPlaying = false;
-  let stopAudio;
   function playMusic() {
     audio.play();
     isMusicPlaying = true;
