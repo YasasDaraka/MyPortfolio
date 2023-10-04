@@ -227,12 +227,14 @@
     }, limit);
   }
   let isMusicPlaying = false;
+  let stopAudio;
   function playMusic() {
     audio.play();
     isMusicPlaying = true;
   }
 
   function stopMusic() {
+    clearInterval(stopAudio);
     audio.pause();
     audio.currentTime = 0;
     isMusicPlaying = false;
@@ -246,9 +248,11 @@
   }
   musicStart.addEventListener("click", function () {
     if (!isMusicPlaying) {
-      playMusic();
-      musicStart.disabled = true;
-      musicStop.disabled = false;
+     stopAudio = setInterval(function () {
+        playMusic();
+        musicStart.disabled = true;
+        musicStop.disabled = false;
+      },20);
     }
   });
   musicStop.addEventListener("click", function () {
