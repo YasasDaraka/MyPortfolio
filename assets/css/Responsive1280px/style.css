@@ -1,4 +1,28 @@
 /*-----------------------------------body--------------------------------------*/
+#loader{
+    height: 100vh;
+    background-image: url("../../other/footerback.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    position: relative;
+    overflow-x: hidden;
+    cursor: none;
+}
+#main-container{
+    display: none;
+}
+#loader>img{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 *{
     margin: 0;
     padding: 0;

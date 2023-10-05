@@ -144,7 +144,7 @@
 <button type="button" id="stop">Stop</button>
 <button type="button" id="music-start">ON</button>
 <button type="button" id="music-stop">OFF</button>
-<audio id="audio" src="assets/music/ThemeSong.mp3"></audio>
+<audio id="audio" src="assets/music/ThemeSong.mp3" loop></audio>
 <div id="logo">
   <img src="assets/images/ride.png" alt="This is instagram" style="width: 300px">
 </div>
@@ -183,7 +183,7 @@
   let interval;
   let stop;
   let isMusicPlaying = false;
-  let stopAudio;
+
   btnStart.addEventListener("click",function (){
     task();
   });
@@ -200,18 +200,16 @@
   });
   function task(){
     clearInterval(stop);
-    clearInterval(stopAudio);
+
     let limit = 50;
     let meterValue = meterInput.value;
     if (meterValue >= 0 && meterValue <= 100) {
       limit = 100 - meterValue;
     }
     if (!isMusicPlaying) {
-      stopAudio = setInterval(function () {
         playMusic();
         musicStart.disabled = true;
         musicStop.disabled = false;
-      },20);
     }
     stop=setInterval(function() {
       if(reverse){
@@ -241,9 +239,7 @@
     audio.play();
     isMusicPlaying = true;
   }
-
   function stopMusic() {
-    clearInterval(stopAudio);
     audio.pause();
     audio.currentTime = 0;
     isMusicPlaying = false;
@@ -257,11 +253,9 @@
   }
   musicStart.addEventListener("click", function () {
     if (!isMusicPlaying) {
-     stopAudio = setInterval(function () {
         playMusic();
         musicStart.disabled = true;
         musicStop.disabled = false;
-      },20);
     }
   });
   musicStop.addEventListener("click", function () {

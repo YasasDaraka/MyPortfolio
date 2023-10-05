@@ -24,6 +24,7 @@
 
 </head>
 <body>
+<section id="loader"><img class="personal-img" src="assets/png/orange_circles.gif" alt="This is image" ></section>
 <!---------------------------------Custom Cursor------------------------------------>
 <div class="custom-cursor"></div>
 <div class="custom-cursor-tw"></div>
@@ -62,7 +63,7 @@
     </section>
 </header>
 
-<main>
+<main id="main-container">
     <section>
         <section>
             <hgroup>
@@ -348,5 +349,12 @@
 <footer>
     <h5>Developed by Yasas Daraka&copy;</h5>
 </footer>
+<script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script>
+    $(window).on('load',function (){
+        $("#main-container").css('display','block');
+        $("#loader").css('display','none');
+    });
+</script>
 </body>
 </html>
