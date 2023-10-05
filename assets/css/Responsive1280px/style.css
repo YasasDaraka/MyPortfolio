@@ -11,6 +11,9 @@
     overflow-x: hidden;
     cursor: none;
 }
+#header{
+    display: none;
+}
 #main-container{
     display: none;
 }
@@ -754,6 +757,9 @@ button>img{
     transition: all 0.1s;
 }
 /*-----------------------------------footer--------------------------------------*/
+footer{
+    display: none;
+}
 footer>h5 {
     text-align: center;
     color: rgb(228, 222, 222);
