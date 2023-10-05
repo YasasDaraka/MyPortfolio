@@ -103,6 +103,9 @@ li:hover{
     transition: .2s ease-out;
     background-color: #262323;
 }
+#rollback-container{
+    display: none;
+}
 .rollback>img{
     width: 20px;
     position: absolute;

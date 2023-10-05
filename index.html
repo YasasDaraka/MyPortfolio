@@ -42,7 +42,7 @@
         customCurs.style.transform = `translate(${x}px, ${y}px)`;
     });
 </script>
-<a href="#header"><div class="rollback"><img src="assets/other/arrow.png" alt=""></div></a>
+<a id="rollback-container" href="#header"><div class="rollback"><img src="assets/other/arrow.png" alt=""></div></a>
 <header dfn id="header">
     <section>
         <h2>My Port<span style="color: darkgoldenrod">folio</span></h2>
@@ -355,6 +355,7 @@
         $("#main-container").css('display','block');
         $("#header").css('display','block');
         $("#footer").css('display','block');
+        $("#rollback-container").css('display','block');
         $("#loader").css('display','none');
     });
 </script>
