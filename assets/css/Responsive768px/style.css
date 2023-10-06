@@ -45,6 +45,8 @@ main>section:first-child {
     left: 26.01vw;
 }
 main>section>section {
+    top: 46.567vw;
+    left: 26.01vw;
     text-align: center;
 }
 section>section>hgroup>h1{

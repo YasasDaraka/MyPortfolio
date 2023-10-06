@@ -54,7 +54,7 @@ main section:hover{
     transform: translate(-50%, -50%);
     transition: transform 0.15s ease;
     z-index: 25;
-    top: -8px;
+    top: 18.5px;
     left: -8.5px;
 }
 .custom-cursor-tw {
