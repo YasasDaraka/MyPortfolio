@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculat</title>
+    <base href="">
+    <title>Document Meta Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="YASAS,GDSE66">
+    <meta name="description" content="FullStack Developer">
+    <meta name="owner" content="Yasas">
+    <meta name="author" content="Yasas">
+    <meta name="theme-color" content="red">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="result" readonly placeholder="0">
+        <div class="row">
+            <div class="btn" id="r-c" onclick="clearResult()">C</div>
+            <div class="btn r-1" onclick="appendToResult('()')">()</div>
+            <div class="btn r-1" onclick="appendToResult('%')">%</div>
+            <div class="btn r-1" onclick="appendToResult('/')">/</div>
+        </div>
+        <div class="row">
+            <div class="btn" onclick="appendToResult('7')">7</div>
+            <div class="btn" onclick="appendToResult('8')">8</div>
+            <div class="btn" onclick="appendToResult('9')">9</div>
+            <div class="btn r-1" onclick="appendToResult('*')">*</div>
+        </div>
+        <div class="row">
+            <div class="btn" onclick="appendToResult('4')">4</div>
+            <div class="btn" onclick="appendToResult('5')">5</div>
+            <div class="btn" onclick="appendToResult('6')">6</div>
+            <div class="btn r-1" onclick="appendToResult('-')">-</div>
+        </div>
+        <div class="row">
+            <div class="btn" onclick="appendToResult('1')">1</div>
+            <div class="btn" onclick="appendToResult('2')">2</div>
+            <div class="btn" onclick="appendToResult('3')">3</div>
+            <div class="btn r-1" onclick="appendToResult('+')">+</div>
+        </div>
+        <div class="row">
+            <div class="btn" onclick="appendToResult('+/-')">+/-</div>
+            <div class="btn" onclick="appendToResult('0')">0</div>
+            <div class="btn" onclick="appendToResult('.')">.</div>
+            <div class="btn r-11" onclick="calculate()">=</div>
+        </div>
+    </div>
+    <script>
+        function appendToResult(value) {
+            document.getElementById('result').value += value;
+        }
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+        function calculate() {
+            var result = eval(document.getElementById('result').value);
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

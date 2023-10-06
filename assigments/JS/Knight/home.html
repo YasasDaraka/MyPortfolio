@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,7 +189,7 @@
     task();
   });
   btnStop.addEventListener("click",function (){
-  clearInterval(stop);
+    clearInterval(stop);
     if (isMusicPlaying) {
       stopMusic();
       musicStart.disabled = false;
@@ -207,9 +208,9 @@
       limit = 100 - meterValue;
     }
     if (!isMusicPlaying) {
-        playMusic();
-        musicStart.disabled = true;
-        musicStop.disabled = false;
+      playMusic();
+      musicStart.disabled = true;
+      musicStop.disabled = false;
     }
     stop=setInterval(function() {
       if(reverse){
@@ -253,9 +254,9 @@
   }
   musicStart.addEventListener("click", function () {
     if (!isMusicPlaying) {
-        playMusic();
-        musicStart.disabled = true;
-        musicStop.disabled = false;
+      playMusic();
+      musicStart.disabled = true;
+      musicStop.disabled = false;
     }
   });
   musicStop.addEventListener("click", function () {
