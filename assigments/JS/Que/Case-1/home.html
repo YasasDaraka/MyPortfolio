@@ -41,18 +41,18 @@
       max-width: calc(100%/6*1);
       height: 100%;
       margin-right: 5%;
-      background-image: url("assets/images/walk.gif");
+      background-image: url("assets/images/walk-image.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
     }
-    .house{
+    #house{
       position: relative;
       bottom: 78.5%;
       display: inline-block;
       width: 25vw;
       height: 25vw;
-      background-image: url("assets/images/house.gif");
+      background-image: url("assets/images/house-stop.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -154,7 +154,7 @@
   <div class="id"></div>
   <div class="id"></div>
   <div class="id"></div>
-  <div class="house"></div>
+  <div id="house"></div>
   </div>
   <div id="btn-container">
   <button type="button" id="start">Start</button>
@@ -167,9 +167,15 @@
   let btnStart = document.querySelector("#start");
   let btnStop = document.querySelector("#stop");
   let stop;
+  var idElements = document.querySelectorAll(".id");
+  var houseElements = document.querySelector("#house");
 
   btnStart.addEventListener("click",function (){
     clearInterval(stop);
+    houseElements.style.backgroundImage = 'url("assets/images/house.gif")';
+    idElements.forEach(function (element) {
+      element.style.backgroundImage = 'url("assets/images/walk.gif")';
+    });
     stop=setInterval(function() {
       var leter = letters.pop();
       letters.unshift(leter);
@@ -180,6 +186,11 @@
   });
   btnStop.addEventListener("click",function (){
     clearInterval(stop);
+    houseElements.style.backgroundImage = 'url("assets/images/house-stop.png")';
+    idElements.forEach(function (element) {
+      element.style.backgroundImage = 'url("assets/images/walk-image.png")';
+    });
+
   });
 </script>
 
