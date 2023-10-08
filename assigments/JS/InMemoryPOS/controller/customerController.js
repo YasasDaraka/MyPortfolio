@@ -16,6 +16,28 @@ $(document).ready(function(){
     $("#cusName").prop('disabled', true);
     $("#cusAddress").prop('disabled', true);
     $("#cusSalary").prop('disabled', true);
+
+    $('#cusThead').css({
+        'width': '600px',
+        'display': 'flex'
+    });
+    $('#cusThead>th').css({
+        'flex': '1',
+        'max-width': 'calc(100%/4*1)'
+    });
+    $('#customerTable').css({
+        'max-height': '370px',
+        'overflow-y': 'auto',
+        'display': 'table-caption'
+    });
+    $('#customerTable>tr').css({
+        'width': '600px',
+        'display': 'flex'
+    });
+    $('#customerTable>tr>td').css({
+        'flex': '1',
+        'max-width': 'calc(100%/4*1)'
+    });
 });
 function generateCustomerId() {
 
@@ -162,6 +184,19 @@ function getAllCustomers() {
                     </tr>`;
 
         $("#customerTable").append(row);
+        $('#customerTable').css({
+            'max-height': '370px',
+            'overflow-y': 'auto',
+            'display': 'table-caption'
+        });
+        $('#customerTable>tr').css({
+            'width': '600px',
+            'display': 'flex'
+        });
+        $('#customerTable>tr>td').css({
+            'flex': '1',
+            'max-width': 'calc(100%/4*1)'
+        });
         bindTrrEvents();
     }
 }
