@@ -17,24 +17,24 @@ $(document).ready(function(){
     $("#itmPrice").prop('disabled', true);
     $("#itmQTY").prop('disabled', true);
 
-    $('#cusThead').css({
+    $('#itemThead').css({
         'width': '600px',
         'display': 'flex'
     });
-    $('#cusThead>th').css({
+    $('#itemThead>th').css({
         'flex': '1',
         'max-width': 'calc(100%/4*1)'
     });
-    $('#customerTable').css({
+    $('#itemTable').css({
         'max-height': '370px',
         'overflow-y': 'auto',
         'display': 'table-caption'
     });
-    $('#customerTable>tr').css({
+    $('#itemTable>tr').css({
         'width': '600px',
         'display': 'flex'
     });
-    $('#customerTable>tr>td').css({
+    $('#itemTable>tr>td').css({
         'flex': '1',
         'max-width': 'calc(100%/4*1)'
     });
