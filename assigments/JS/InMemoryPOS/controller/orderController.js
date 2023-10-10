@@ -165,3 +165,12 @@ $("#order-add-item").click(function () {
     });
     $("#total").text(allTotal);
 });
+$("#txtDiscount").on("keydown keyup", function (e){
+    let total = parseFloat($("#total").text());
+    if(total>0){
+        let discount = $(this).val();
+        let fullAm = (total/100*discount);
+        total -= fullAm;
+        $("#subtotal").text(total);
+    }
+});
