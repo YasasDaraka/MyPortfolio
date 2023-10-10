@@ -94,12 +94,12 @@ function placeOrder() {
     let OId = $("#order-id").val();
 
     $('#order-table>tr').each(function () {
-        let name = $(this).children().eq(1).text();
+        let code = $(this).children().eq(0).text();
         let qty = $(this).children().eq(3).text();
         let price = $(this).children().eq(2).text();
         let orderDetails = {
             oid: OId,
-            code: name,
+            code: code,
             qty: parseInt(qty),
             unitPrice: parseFloat(price)
         };
@@ -230,4 +230,75 @@ $("#btnSubmitOrder").click(function () {
     }else {
         alert("Order Already Registered");
     }
-})
+});
+$("#order-id").on("keydown", function (e) {
+    $("#order-table").empty();
+    if (e.keyCode === 13) {
+       let id =$("#order-id").val();
+           orderDB.find(function (order) {
+               if (order.oid == id) {
+                   $("#order-table").empty();
+                   let date = order.date;
+                   let cusId = order.customerID;
+                   let orderDetails = order.orderDetails;
+                   let cusName ;
+                   let address;
+                   let salary;
+                   customerDB.find(function (customer) {
+                       if (customer.id == cusId) {
+                          cusName=customer.name;
+                          address=customer.address;
+                          salary=customer.salary;
+                       }
+                   });
+
+                   $("#cId").val(cusId);
+                   $("#cName").val(cusName);
+                   $("#cAddress").val(address);
+                   $("#cSalary").val(salary);
+                   $("#order-date").val(date);
+
+                   let code;
+                   let qty;
+                   let unitPrice;
+                   let itemName;
+                   orderDetails.forEach(function (detail) {
+                       console.log(detail.oid, detail.code, detail.qty, detail.unitPrice);
+                       code=detail.code;
+                       qty=detail.qty;
+                       unitPrice=detail.unitPrice;
+                       itemDB.find(function (item) {
+                           if (item.id == code) {
+                               itemName=item.name;
+                           }
+                       });
+                       let total = parseFloat(unitPrice) * parseFloat(qty);
+                       let row = `<tr>
+                     <td>${code}</td>
+                     <td>${itemName}</td>
+                     <td>${unitPrice}</td>
+                     <td>${qty}</td>
+                     <td>${total}</td>
+                    </tr>`;
+                       $("#order-table").append(row);
+                       $('#order-table').css({
+                           'max-height': '100%',
+                           'overflow-y': 'auto',
+                           'display': 'table-caption'
+                       });
+                       $('#order-table>tr').css({
+                           'width': '100%',
+                           'display': 'flex'
+                       });
+                       $('#order-table>tr>td').css({
+                           'flex': '1',
+                           'max-width': 'calc(100%/5*1)'
+                       });
+                   });
+               }
+               else {
+                   alert("Order not Registered");
+               }
+           });
+    }
+});
