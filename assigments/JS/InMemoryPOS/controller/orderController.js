@@ -117,8 +117,25 @@ $("#order-add-item").click(function () {
     let price = $("#price").val();
     let qty = $("#orderQty").val();
     let total = parseFloat(price) * parseFloat(qty);
+    let allTotal = 0;
+    let itemExists = false;
 
-    let row = `<tr>
+    $('#order-table>tr').each(function (e) {
+       let check =$(this).children().eq(0).text();
+        if (id === check){
+           let liQty = $(this).children().eq(3).text();
+           let upQty = parseInt(liQty)+parseInt(qty);
+            $(this).children().eq(1).text(name);
+            $(this).children().eq(2).text(price);
+            $(this).children().eq(3).text(upQty);
+            $(this).children().eq(4).text(upQty * parseFloat(price));
+            itemExists = true;
+            return false;
+        }
+    });
+
+    if (!itemExists){
+        let row = `<tr>
                      <td>${id}</td>
                      <td>${name}</td>
                      <td>${price}</td>
@@ -126,19 +143,25 @@ $("#order-add-item").click(function () {
                      <td>${total}</td>
                     </tr>`;
 
-    $("#order-table").append(row);
-    $('#order-table').css({
-        'max-height': '100%',
-        'overflow-y': 'auto',
-        'display': 'table-caption'
-    });
-    $('#order-table>tr').css({
-        'width': '100%',
-        'display': 'flex'
-    });
-    $('#order-table>tr>td').css({
-        'flex': '1',
-        'max-width': 'calc(100%/5*1)'
-    });
+        $("#order-table").append(row);
+        $('#order-table').css({
+            'max-height': '100%',
+            'overflow-y': 'auto',
+            'display': 'table-caption'
+        });
+        $('#order-table>tr').css({
+            'width': '100%',
+            'display': 'flex'
+        });
+        $('#order-table>tr>td').css({
+            'flex': '1',
+            'max-width': 'calc(100%/5*1)'
+        });
 
+    }
+    $('#order-table>tr').each(function (e) {
+            let full = $(this).children().eq(4).text();
+            allTotal += parseFloat(full);
+    });
+    $("#total").text(allTotal);
 });
