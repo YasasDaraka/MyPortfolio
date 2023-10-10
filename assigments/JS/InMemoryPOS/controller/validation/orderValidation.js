@@ -114,3 +114,11 @@ $("#orderQty").on("keydown keyup input", function (e){
         $("#QtyError").text("Pleace Input Qty");
     }
 });
+function clearAll() {
+    $("#cName,#cSalary,#cAddress,#itemName,#price,#qtyOnHand,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").val("");
+    $("#cName,#cSalary,#cAddress,#itemName,#price,#qtyOnHand,#orderQty,#order-date,#txtCash").css("border", "1px solid #ced4da");
+    $("#total,#subtotal").text("");
+    $("#order-add-item").prop("disabled", true);
+    $("#btnSubmitOrder").prop("disabled", true);
+    $("#order-table").empty();
+}

@@ -219,8 +219,8 @@ $("#btnSubmitOrder").click(function () {
         if (dateCheck()) {
             placeOrder();
             alert("Order Place Successfully");
+            clearAll();
             generateOrderId();
-            $("#order-table").empty();
         }else {
             alert("Insert Date!");
         }
