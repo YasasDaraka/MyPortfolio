@@ -1,7 +1,7 @@
 const Item_CODE_REGEX = /^(I00-)[0-9]{4}$/;
 const Item_NAME_REGEX = /^[A-Za-z ]{5,}$/;
 const Item_QTY_REGEX = /^[0-9]{2,}([.][0-9]{2})?$/;
-const UNIT_PRICE_REGEX = /^[0-9]+$/;
+const UNIT_PRICE_REGEX = /^[1-9]\d*$/;
 
 let item_vArray = new Array();
 item_vArray.push({field: $("#itmCode"), regEx: Item_CODE_REGEX ,error: $("#itmCodeError")});

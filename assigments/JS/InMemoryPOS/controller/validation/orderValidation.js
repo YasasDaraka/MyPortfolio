@@ -1,4 +1,4 @@
-const QTY_REGEX = /^[0-9]+$/;
+const QTY_REGEX = /^[1-9]\d*$/;
 let o_Array = new Array();
 o_Array.push({field: $("#cName"), regEx: CUS_NAME_REGEX });
 o_Array.push({field: $("#cAddress"), regEx: CUS_ADDRESS_REGEX});
@@ -84,3 +84,33 @@ function checkAllOrder() {
     }
     return true;
 }
+function cashValidate() {
+    let subtotal = parseFloat($("#subtotal").text());
+    let cash = parseFloat($("#txtCash").val());
+
+    if (!isNaN(subtotal) && !isNaN(cash)) {
+        if (cash >= subtotal) {
+            $("#txtCash").css("border", "2px solid green");
+            return true;
+        } else if (cash < subtotal) {
+            $("#txtCash").css("border", "2px solid red");
+        } else {
+            $("#txtCash").css("border", "1px solid #ced4da");
+        }
+    }
+    return false;
+}
+$("#orderQty").on("keydown keyup input", function (e){
+    let qty = parseInt($("#qtyOnHand").val());
+    let orderQty = parseInt($("#orderQty").val());
+    if (qty>=orderQty){
+        $("#orderQty").css("border", "2px solid green");
+        $("#QtyError").text("");
+    }
+    else if (qty<orderQty){
+        $("#orderQty").css("border", "2px solid red");
+        $("#QtyError").text(`Please Enter Amount lower than: ${qty}`);
+    }else if(isNaN(orderQty)){
+        $("#QtyError").text("Pleace Input Qty");
+    }
+});

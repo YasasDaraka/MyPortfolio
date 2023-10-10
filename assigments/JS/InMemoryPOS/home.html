@@ -346,12 +346,12 @@
       </div>
     </nav>
   </header>
-  <main id="order-menu">
-    <div class="container text-center" style="margin-top: 30px; background-color: aliceblue;">
+  <main id="order-menu" style="margin-right: 0; margin-left: 60px; margin-top: 50px;">
+    <div class="container text-center" style=" background-color: aliceblue;">
       <div class="row">
-        <div class="col" style="height: 330px; margin-right: 30px;">
+        <div class="col" style="height: 330px; ">
           <h3 class="" style="color: white; width: 400px; background-color: #3498DB;">Invoice Details</h3>
-          <div class="container text-center" style="margin-top: 30px;">
+          <div class="container text-center" >
             <div class="row">
               <div class="col">
                 Order ID:
@@ -390,7 +390,7 @@
             </div>
           </div>
         </div>
-        <div class="col" style="height: 330px; margin-right: 30px;">
+        <div class="col" style="height: 330px; ">
           <h3 class="" style="color: white; width: 400px; background-color: #3498DB;">Item Select</h3>
           <div class="container text-center" style="margin-top: 30px;">
             <div class="row">
@@ -423,6 +423,7 @@
               <div class="col">
                 OrderQTY :
                 <input class="form-control" id="orderQty" placeholder="" type="text">
+                <p><small class="text-danger" id="QtyError"></small></p>
               </div>
               <div class="col">
                 <button id="order-add-item" class="btn btn-danger" style="margin-top: 70px;" type="button">Add Item</button>
@@ -440,7 +441,7 @@
                     <span class="" id="total-text" style="color: #3d98ef;font-size: 13px;">Total : </span>
                   </div>
                   <div class="col-12">
-                    <span id="total"style="font-size: 30px;color: #3d98ef;">00.0</span> Rs/=
+                    <span id="total"style="font-size: 30px;color: #3d98ef;">0</span> Rs/=
                   </div>
                 </div>
 
@@ -451,7 +452,7 @@
                     <span id="total-text1" style="color: #ef5350;font-size: 13px;">SubTotal : </span>
                   </div>
                   <div class="col-12">
-                    <span id="subtotal" style="color: #ef5350;font-size: 30px;">00.0</span> Rs/=
+                    <span id="subtotal" style="color: #ef5350;font-size: 30px;">0</span> Rs/=
                   </div>
                 </div>
 
@@ -509,6 +510,8 @@
 <script src="assets/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="db/db.js"></script>
 <script src="controller/indexController.js"></script>
+<script src="model/OrderDetails.js"></script>
+<script src="model/Order.js"></script>
 <script src="controller/customerController.js"></script>
 <script src="controller/validation/customerValidation.js"></script>
 <script src="controller/itemController.js"></script>

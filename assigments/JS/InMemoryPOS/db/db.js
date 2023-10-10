@@ -1,6 +1,7 @@
 var customerDB = new Array();
 var itemDB = new Array();
 var orderDB = new Array();
+var orderDetailsDB = new Array();
 
 let newCustomer1 = Object.assign({}, customer);
 
@@ -33,10 +34,5 @@ newItem2.qty = "100";
 newItem2.price = "1000";
 itemDB.push(newItem2);
 
-let newOrder = Object.assign({}, order);
-newOrder.id = "I00-0002";
-newOrder.name = "Food";
-newOrder.qty = "100";
-newOrder.price = "1000";
-orderDB.push(newOrder);
+
 
