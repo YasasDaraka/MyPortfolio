@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('#order-thead>th').css({
         'flex': '1',
         'max-width': 'calc(100%/5*1)'
-    });
+    })
 });
 $("#btn-order,.order-nav").click(function (){
     setCusIds();
@@ -148,7 +148,8 @@ $("#order-add-item").click(function () {
 
         $("#order-table").append(row);
         $('#order-table').css({
-            'max-height': '100%',
+            'width ': '101.8%',
+            'max-height': '80px',
             'overflow-y': 'auto',
             'display': 'table-caption'
         });
@@ -282,7 +283,8 @@ $("#order-id").on("keydown", function (e) {
                     </tr>`;
                        $("#order-table").append(row);
                        $('#order-table').css({
-                           'max-height': '100%',
+                           'width ': '101.8%',
+                           'max-height': '80px',
                            'overflow-y': 'auto',
                            'display': 'table-caption'
                        });
