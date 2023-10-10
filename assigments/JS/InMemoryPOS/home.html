@@ -367,15 +367,13 @@
             <div class="row">
               <div class="col">
                 Cus ID :
-                <select aria-label="Default select example" class="form-select" id="cId">
-                  <option selected></option>
+                <select class="form-select" id="cId">
+
                 </select>
               </div>
               <div class="col">
                 Cus Name:
-                <select aria-label="Default select example" class="form-select" id="cName">
-                  <option selected></option>
-                </select>
+                <input class="form-control" id="cName" placeholder="" type="text">
               </div>
             </div>
           </div>
@@ -383,11 +381,11 @@
             <div class="row">
               <div class="col">
                 Salary :
-                <input class="form-control" id="salary" placeholder="" type="text">
+                <input class="form-control" id="cSalary" placeholder="" type="text">
               </div>
               <div class="col">
                 Address :
-                <input class="form-control" id="address" placeholder="" type="text">
+                <input class="form-control" id="cAddress" placeholder="" type="text">
               </div>
             </div>
           </div>
@@ -399,14 +397,12 @@
               <div class="col">
                 Item Code :
                 <select aria-label="Default select example" class="form-select" id="icode">
-                  <option value=""></option>
+
                 </select>
               </div>
               <div class="col">
                 Item Name :
-                <select aria-label="Default select example" class="form-select" id="itemName">
-                  <option selected></option>
-                </select>
+                <input class="form-control" id="itemName" placeholder="" type="text">
               </div>
             </div>
           </div>
@@ -429,43 +425,62 @@
                 <input class="form-control" id="orderQty" placeholder="" type="text">
               </div>
               <div class="col">
-                <button class="btn btn-danger order-btn-add-item" style="margin-top: 70px;" type="button">Add Item</button>
+                <button id="order-add-item" class="btn btn-danger" style="margin-top: 70px;" type="button">Add Item</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col" style="height: 330px; width: auto; background-color: #85C1E9;">
-          <div class="container text-center">
+
+        <div class="col"style="height: 330px; width: auto;">
+          <section class="content-box-2 p-4 " style="padding: 40px;">
             <div class="row">
-              <div class="col" style="color: blue; font-size: 30px;">
-                Total
-                <label class="form-label" style="font-size: 40px; color: red;">1000.00</label>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12">
+                    <span class="" id="total-text" style="color: #3d98ef;font-size: 13px;">Total : </span>
+                  </div>
+                  <div class="col-12">
+                    <span id="total"style="font-size: 30px;color: #3d98ef;">00.0</span> Rs/=
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12">
+                    <span id="total-text1" style="color: #ef5350;font-size: 13px;">SubTotal : </span>
+                  </div>
+                  <div class="col-12">
+                    <span id="subtotal" style="color: #ef5350;font-size: 30px;">00.0</span> Rs/=
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-6 mt-2">
+                <div class="form-group">
+                  <label style="font-weight: bold;margin-right: 10px;">Cash</label>
+                  <input class="form-control" id="txtCash" min="0" type="number">
+                  <span class="control-error"
+                        id="cash-empty-error"></span>
+                </div>
+              </div>
+              <div class="col-6 mt-2">
+                <div class="form-group">
+                  <label style="font-weight: bold;margin-right: 10px;">Discount</label>
+                  <input class="form-control" id="txtDiscount" min="0" type="number">
+                </div>
+              </div>
+              <div class="col-8" style="width: 200%;">
+                <div class="form-group">
+                  <label style="font-weight: bold;margin-right: 10px;">Balance</label>
+                  <input class="form-control" id="txtBalance" type="text" style="width: 100%;">
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <button class="btn btn-success" id="btnSubmitOrder" type="button" style="margin-left: 100%;">Purchase</button>
               </div>
             </div>
-          </div>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                Cash :
-                <input class="form-control" id="cash" placeholder="" type="text">
-              </div>
-            </div>
-          </div>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                Balance :
-                <input class="form-control" id="balance" placeholder="" type="text">
-              </div>
-            </div>
-          </div>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                <button class="btn btn-primary" style="margin-top: 30px;" type="button">Purchase</button>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
       <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
@@ -473,7 +488,7 @@
           <div class="customeTableDiv">
             <table class="table bg-light table-bordered w-100 h-100 table-hover">
               <thead class="bg-success text-light text-center">
-              <tr class="table-primary">
+              <tr class="table-primary" id="order-thead">
                 <th scope="col">Item Code</th>
                 <th scope="col">Item Name</th>
                 <th scope="col">Price</th>
@@ -481,14 +496,8 @@
                 <th scope="col">Total</th>
               </tr>
               </thead>
-              <tbody>
-              <tr>
-                <td>Itm002</td>
-                <td>Soap</td>
-                <td>290.00</td>
-                <td>2</td>
-                <td>580.00</td>
-              </tr>
+              <tbody id="order-table">
+
               </tbody>
             </table>
           </div>
@@ -504,5 +513,7 @@
 <script src="controller/validation/customerValidation.js"></script>
 <script src="controller/itemController.js"></script>
 <script src="controller/validation/itemValidation.js"></script>
+<script src="controller/orderController.js"></script>
+<script src="controller/validation/orderValidation.js"></script>
 </body>
 </html>
