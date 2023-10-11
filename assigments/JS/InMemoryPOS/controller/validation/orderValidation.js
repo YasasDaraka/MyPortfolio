@@ -84,6 +84,13 @@ function checkAllOrder() {
     }
     return true;
 }
+function itemValidate() {
+    let subtotal = parseFloat($("#subtotal").text());
+        if (subtotal>0) {
+            return true;
+        }
+    return false;
+}
 function cashValidate() {
     let subtotal = parseFloat($("#subtotal").text());
     let cash = parseFloat($("#txtCash").val());

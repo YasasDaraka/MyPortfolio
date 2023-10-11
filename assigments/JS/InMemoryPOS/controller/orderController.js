@@ -215,21 +215,25 @@ function dateCheck() {
 }
 $("#btnSubmitOrder").click(function () {
     let oId = $("#order-id").val();
-    if (!searchOrder(oId)) {
-    if (cashValidate()) {
-        if (dateCheck()) {
-            placeOrder();
-            alert("Order Place Successfully");
-            clearAll();
-            generateOrderId();
-        }else {
-            alert("Insert Date!");
+    if (itemValidate()) {
+        if (!searchOrder(oId)) {
+            if (cashValidate()) {
+                if (dateCheck()) {
+                    placeOrder();
+                    alert("Order Place Successfully");
+                    clearAll();
+                    generateOrderId();
+                } else {
+                    alert("Insert Date!");
+                }
+            } else {
+                alert("Insuficent Credit : Check Cash!");
+            }
+        } else {
+            alert("Order Already Registered");
         }
-    } else {
-        alert("Insuficent Credit : Check Cash!");
-    }
     }else {
-        alert("Order Already Registered");
+        alert("Pleace Add Items to Place Order");
     }
 });
 $("#order-id").on("keydown", function (e) {
