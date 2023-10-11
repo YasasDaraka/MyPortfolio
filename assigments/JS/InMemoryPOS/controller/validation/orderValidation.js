@@ -103,15 +103,26 @@ function cashValidate() {
 $("#orderQty").on("keydown keyup input", function (e){
     let qty = parseInt($("#qtyOnHand").val());
     let orderQty = parseInt($("#orderQty").val());
-    if (qty>=orderQty){
+    if (qty>=orderQty && qty<=0){
         $("#orderQty").css("border", "2px solid green");
         $("#QtyError").text("");
+        $("#order-add-item").prop("disabled", false);
     }
     else if (qty<orderQty){
         $("#orderQty").css("border", "2px solid red");
         $("#QtyError").text(`Please Enter Amount lower than: ${qty}`);
-    }else if(isNaN(orderQty)){
+        $("#order-add-item").prop("disabled", true);
+    }
+    else if (orderQty<=0){
+        $("#orderQty").css("border", "2px solid red");
+        $("#QtyError").text(`Please Enter Valid Amount`);
+        $("#order-add-item").prop("disabled", true);
+    }
+    else if(isNaN(orderQty)){
         $("#QtyError").text("Pleace Input Qty");
+        $("#order-add-item").prop("disabled", true);
+    }else{
+        $("#QtyError").text("");
     }
 });
 function clearAll() {
