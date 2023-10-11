@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#order-add-item").prop("disabled", true);
     $("#btnSubmitOrder").prop("disabled", true);
+    $("#order-clear").prop("disabled", true);
     generateOrderId();
     $('#order-thead').css({
         'width': '100%',
@@ -14,6 +15,9 @@ $(document).ready(function() {
 $("#btn-order,.order-nav").click(function (){
     setCusIds();
     setItemIds()
+});
+$("#order-clear,.order-nav").click(function (){
+    clearAll();
 });
 
 function generateOrderId() {

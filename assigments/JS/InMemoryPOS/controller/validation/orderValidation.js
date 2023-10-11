@@ -135,8 +135,18 @@ $("#orderQty").on("keydown keyup input", function (e){
 function clearAll() {
     $("#cName,#cSalary,#cAddress,#itemName,#price,#qtyOnHand,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").val("");
     $("#cName,#cSalary,#cAddress,#itemName,#price,#qtyOnHand,#orderQty,#order-date,#txtCash").css("border", "1px solid #ced4da");
-    $("#total,#subtotal").text("");
+    $("#total,#subtotal").text("0");
     $("#order-add-item").prop("disabled", true);
     $("#btnSubmitOrder").prop("disabled", true);
     $("#order-table").empty();
 }
+$("#cName,#cSalary,#cAddress,#itemName,#price,#qtyOnHand,#orderQty,#order-date,#txtCash,#txtDiscount,#txtBalance").on("keydown keyup input", function (e){
+    var anyFieldNotEmpty = true;
+    $("#cName, #cSalary, #cAddress, #itemName, #price, #qtyOnHand, #orderQty, #order-date, #txtCash, #txtDiscount, #txtBalance").each(function() {
+        if ($(this).val() !== "") {
+            anyFieldNotEmpty = false;
+            return true;
+        }
+    });
+    $("#order-clear").prop("disabled", anyFieldNotEmpty);
+});
