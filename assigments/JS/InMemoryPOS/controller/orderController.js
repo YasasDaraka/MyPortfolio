@@ -157,14 +157,21 @@ $("#order-add-item").click(function () {
             'overflow-y': 'auto',
             'display': 'table-caption'
         });
-        $('#order-table>tr').css({
-            'width': '100%',
-            'display': 'flex'
-        });
         $('#order-table>tr>td').css({
             'flex': '1',
             'max-width': 'calc(100%/5*1)'
         });
+        if ($("#order-table>tr").length > 1) {
+            $('#order-table>tr').css({
+                'width': '100%',
+                'display': 'flex'
+            });
+        } else {
+            $('#order-table>tr').css({
+                'width': '925px',
+                'display': 'flex'
+            });
+        }
 
     }
     $('#order-table>tr').each(function (e) {
@@ -296,14 +303,21 @@ $("#order-id").on("keydown", function (e) {
                            'overflow-y': 'auto',
                            'display': 'table-caption'
                        });
-                       $('#order-table>tr').css({
-                           'width': '100%',
-                           'display': 'flex'
-                       });
                        $('#order-table>tr>td').css({
                            'flex': '1',
                            'max-width': 'calc(100%/5*1)'
                        });
+                       if ($("#order-table>tr").length > 1) {
+                           $('#order-table>tr').css({
+                               'width': '100%',
+                               'display': 'flex'
+                           });
+                       } else {
+                           $('#order-table>tr').css({
+                               'width': '925px',
+                               'display': 'flex'
+                           });
+                       }
                    });
                }
                else {
